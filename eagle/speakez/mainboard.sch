@@ -5776,8 +5776,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <parts>
 <part name="R1" library="rcl" deviceset="R-US_" device="M0805" value="5kohm"/>
 <part name="R2" library="rcl" deviceset="R-US_" device="M0805" value="5kohm"/>
-<part name="C1" library="rcl" deviceset="C-US" device="C0805" value="0.1uf"/>
-<part name="C2" library="rcl" deviceset="C-US" device="C0805" value="0.1uf"/>
+<part name="C1" library="rcl" deviceset="C-US" device="C0805" value="100pf"/>
+<part name="C2" library="rcl" deviceset="C-US" device="C0805" value="100pf"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
 </parts>

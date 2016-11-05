@@ -1,0 +1,97 @@
+# Created by Ultra Librarian Gold 5.3.88 Copyright © 1999-2010
+#  Premier Farnell
+
+Grid mil;
+Set Wire_Bend 2;
+
+
+Edit 'ADI_ADMP521A.pac';
+Layer 1;
+Smd '1' 16 24 -0 R0 (44 18);
+Layer 1;
+Smd '2' 16 24 -0 R0 (16 18);
+Layer 1;
+Smd '3' 2 2 -0 R0 (-68 0);
+Layer 1;
+Smd '4' 16 24 -0 R0 (16 -18);
+Layer 1;
+Smd '5' 16 24 -0 R0 (44 -18);
+Change Drill 10;
+Pad '6' Round 0 R0 (-38 0);
+Layer 1;
+Layer 1;
+Wire 16 (-6 -3) (-6 0) (-8 10) (-12 19) (-19 25) (-28 30) (-38 31) (-47 30) (-56 25)\
+    (-63 19) (-67 10) (-69 0) (-69 -3) (-67 -3) (-67 0) (-66 9) (-61 17) (-55 24)\
+    (-47 28) (-38 30) (-28 28) (-20 24) (-14 17) (-9 9) (-8 0) (-8 -3);
+Layer 1;
+Wire 16 (-6 3) (-6 0) (-8 -10) (-12 -19) (-19 -25) (-28 -30) (-38 -31) (-47 -30) (-56 -25)\
+    (-63 -19) (-67 -10) (-69 0) (-69 3) (-67 3) (-67 0) (-66 -9) (-61 -17) (-55 -24)\
+    (-47 -28) (-38 -30) (-28 -28) (-20 -24) (-14 -17) (-9 -9) (-8 0) (-8 3);
+Layer 39;
+Wire 6 (-90 -71) (-90 71);
+Wire 6 (-90 71) (90 71);
+Wire 6 (90 71) (90 -71);
+Wire 6 (90 -71) (-90 -71);
+Layer 39;
+Wire 6 (-90 -71) (-90 71) (90 71) (90 -71);
+Layer 21;
+Wire 6 (-80 -11) (-80 -61);
+Wire 6 (-80 -61) (80 -61);
+Wire 6 (80 -61) (80 61);
+Wire 6 (80 61) (-80 61);
+Wire 6 (-80 61) (-80 11);
+Layer 51;
+Wire 6 (-80 -61) (80 -61);
+Wire 6 (80 -61) (80 61);
+Wire 6 (80 61) (-80 61);
+Wire 6 (-80 61) (-80 -61);
+Layer 25;
+Change Size 82;
+Change Ratio 10;
+Text '>NAME' SR0 (-178 74);
+Layer 27;
+Change Size 82;
+Change Ratio 10;
+Text '>VALUE' SR0 (-231 -154);
+
+Edit 'ADMP621ACEZ-RL7.sym';
+Layer 94;
+Pin 'VDD' Pwr None Middle R0 Both 0 (-700 100);
+Pin 'CLK' In None Middle R0 Both 0 (-700 -100);
+Pin 'L/R_SELECT' Pas None Middle R0 Both 0 (-700 -200);
+Pin 'GND_2' Pas None Middle R0 Both 0 (-700 -300);
+Pin 'GND' Pas None Middle R0 Both 0 (-700 -400);
+Pin 'DATA' Out None Middle R180 Both 0 (700 100);
+Wire 16 (-500 300) (-500 -600);
+Wire 16 (-500 -600) (500 -600);
+Wire 16 (500 -600) (500 300);
+Wire 16 (500 300) (-500 300);
+Layer 97;
+Layer 95;
+Change Size 82;
+Change Ratio 10;
+Text '>NAME' SR0 (-192 345);
+Layer 96;
+Change Size 82;
+Change Ratio 10;
+Text '>VALUE' SR0 (-246 -713);
+
+Edit 'ADMP621ACEZ-RL7.dev';
+Prefix 'U';
+
+Value Off;
+Add ADMP621ACEZ-RL7 'A' Next  0 (0 0);
+Package 'ADI_ADMP521A';
+Technology '';
+Attribute Supplier 'ANALOG DEVICES';
+Attribute MPN 'ADMP621ACEZ-RL7';
+Attribute OC_FARNELL '2361525	';
+Attribute OC_NEWARK '08X1061';
+Attribute Package '5LGA';
+Description 'IC, MICROPHONE, 2 CH , LGA_CAV-5';
+Connect 'A.CLK' '1';
+Connect 'A.L/R_SELECT' '2';
+Connect 'A.GND_2' '3';
+Connect 'A.VDD' '4';
+Connect 'A.DATA' '5';
+Connect 'A.GND' '6';

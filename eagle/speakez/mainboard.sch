@@ -9278,6 +9278,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="D2" library="SparkFun-LED" deviceset="LED" device="1206"/>
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="66 ohms"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
+<part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9310,8 +9312,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="U$1" gate="G$1" x="144.78" y="15.24"/>
 <instance part="JP1" gate="A" x="205.74" y="38.1" rot="R180"/>
 <instance part="JP2" gate="A" x="215.9" y="-5.08" rot="R180"/>
-<instance part="JP3" gate="A" x="187.96" y="48.26"/>
-<instance part="JP4" gate="A" x="190.5" y="-7.62"/>
+<instance part="JP3" gate="A" x="226.06" y="43.18"/>
+<instance part="JP4" gate="A" x="208.28" y="-7.62"/>
 <instance part="U1" gate="G$1" x="129.54" y="101.6"/>
 <instance part="C5" gate="G$1" x="121.92" y="86.36"/>
 <instance part="C6" gate="G$1" x="139.7" y="86.36"/>
@@ -9320,6 +9322,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="D2" gate="G$1" x="114.3" y="7.62" rot="R270"/>
 <instance part="R3" gate="G$1" x="104.14" y="7.62"/>
 <instance part="SUPPLY3" gate="GND" x="99.06" y="5.08"/>
+<instance part="R4" gate="G$1" x="180.34" y="0"/>
+<instance part="SUPPLY5" gate="GND" x="185.42" y="-2.54"/>
 </instances>
 <busses>
 </busses>
@@ -9403,6 +9407,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="SUPPLY5" gate="GND" pin="GND"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -9621,6 +9629,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="D2" gate="G$1" pin="C"/>
 <pinref part="R3" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="RESET"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

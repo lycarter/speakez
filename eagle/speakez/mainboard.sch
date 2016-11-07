@@ -8826,13 +8826,9 @@ Spark Fun Electronics SKU : COM-00107</description>
 <wire x1="144.78" y1="124.46" x2="5.08" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="124.46" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="101.6" x2="177.8" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="101.6" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="101.6" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
-<wire x1="177.8" y1="66.04" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="63.5" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VOUT3V3"/>
-<wire x1="175.26" y1="66.04" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
-<junction x="177.8" y="66.04"/>
 </segment>
 </net>
 </nets>

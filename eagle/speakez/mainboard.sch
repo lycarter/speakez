@@ -8869,6 +8869,15 @@ Spark Fun Electronics SKU : COM-00107</description>
 <wire x1="121.92" y1="-22.86" x2="121.92" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="VREF-H"/>
+<wire x1="175.26" y1="50.8" x2="180.34" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="50.8" x2="180.34" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VBAT"/>
+<wire x1="180.34" y1="15.24" x2="175.26" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

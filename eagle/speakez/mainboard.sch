@@ -6063,90 +6063,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <rectangle x1="2.75" y1="-0.25" x2="3.25" y2="0.25" layer="51" rot="R270"/>
 <rectangle x1="0.75" y1="-0.25" x2="1.25" y2="0.25" layer="51" rot="R270"/>
 </package>
-<package name="1X16">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 0.1"</description>
-<wire x1="-20.32" y1="1.27" x2="-20.32" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-20.32" y1="1.27" x2="-17.78" y2="1.27" width="0.254" layer="21"/>
-<wire x1="-17.78" y1="1.27" x2="20.32" y2="1.27" width="0.254" layer="21"/>
-<wire x1="20.32" y1="1.27" x2="20.32" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="20.32" y1="-1.27" x2="-20.32" y2="-1.27" width="0.254" layer="21"/>
-<wire x1="-17.78" y1="1.27" x2="-17.78" y2="-1.27" width="0.254" layer="21"/>
-<pad name="1" x="-19.05" y="0" drill="1.016" shape="square" rot="R90"/>
-<pad name="2" x="-16.51" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="3" x="-13.97" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="4" x="-11.43" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="5" x="-8.89" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="6" x="-6.35" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="7" x="-3.81" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="8" x="-1.27" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="9" x="1.27" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="10" x="3.81" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="11" x="6.35" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="12" x="8.89" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="13" x="11.43" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="14" x="13.97" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="15" x="16.51" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="16" x="19.05" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<text x="-20.3962" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-20.32" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="16.256" y1="-0.254" x2="16.764" y2="0.254" layer="51"/>
-<rectangle x1="13.716" y1="-0.254" x2="14.224" y2="0.254" layer="51"/>
-<rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
-<rectangle x1="8.636" y1="-0.254" x2="9.144" y2="0.254" layer="51"/>
-<rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
-<rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
-<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
-<rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
-<rectangle x1="-6.604" y1="-0.254" x2="-6.096" y2="0.254" layer="51"/>
-<rectangle x1="-9.144" y1="-0.254" x2="-8.636" y2="0.254" layer="51"/>
-<rectangle x1="-11.684" y1="-0.254" x2="-11.176" y2="0.254" layer="51"/>
-<rectangle x1="-14.224" y1="-0.254" x2="-13.716" y2="0.254" layer="51"/>
-<rectangle x1="-16.764" y1="-0.254" x2="-16.256" y2="0.254" layer="51"/>
-<rectangle x1="-19.304" y1="-0.254" x2="-18.796" y2="0.254" layer="51"/>
-<rectangle x1="18.796" y1="-0.254" x2="19.304" y2="0.254" layer="51"/>
-</package>
-<package name="1X16M">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2MM"</description>
-<wire x1="16.25" y1="1.25" x2="16.25" y2="-1.25" width="0.2032" layer="21"/>
-<wire x1="16.25" y1="-1.25" x2="-16.25" y2="-1.25" width="0.2032" layer="21"/>
-<wire x1="-16.25" y1="-1.25" x2="-16.25" y2="1.25" width="0.2032" layer="21"/>
-<wire x1="-16.25" y1="1.25" x2="16.25" y2="1.25" width="0.2032" layer="21"/>
-<pad name="1" x="-15" y="0" drill="0.9144" shape="square"/>
-<pad name="2" x="-13" y="0" drill="0.9144"/>
-<pad name="3" x="-11" y="0" drill="0.9144" rot="R270"/>
-<pad name="4" x="-9" y="0" drill="0.9144" rot="R270"/>
-<pad name="5" x="-7" y="0" drill="0.9144" rot="R270"/>
-<pad name="6" x="-5" y="0" drill="0.9144" rot="R270"/>
-<pad name="7" x="-3" y="0" drill="0.9144" rot="R270"/>
-<pad name="8" x="-1" y="0" drill="0.9144" rot="R270"/>
-<pad name="9" x="1" y="0" drill="0.9144" rot="R270"/>
-<pad name="10" x="3" y="0" drill="0.9144" rot="R270"/>
-<pad name="11" x="5" y="0" drill="0.9144" rot="R270"/>
-<pad name="12" x="7" y="0" drill="0.9144" rot="R270"/>
-<pad name="13" x="9" y="0" drill="0.9144" rot="R270"/>
-<pad name="14" x="11" y="0" drill="0.9144" rot="R270"/>
-<pad name="15" x="13" y="0" drill="0.9144" rot="R270"/>
-<pad name="16" x="15" y="0" drill="0.9144" rot="R270"/>
-<text x="-17" y="-1" size="1.016" layer="25" ratio="14" rot="R90">&gt;NAME</text>
-<text x="18" y="-1" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-13.25" y1="-0.25" x2="-12.75" y2="0.25" layer="51"/>
-<rectangle x1="-15.25" y1="-0.25" x2="-14.75" y2="0.25" layer="51"/>
-<rectangle x1="-9.25" y1="-0.25" x2="-8.75" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="-11.25" y1="-0.25" x2="-10.75" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="-5.25" y1="-0.25" x2="-4.75" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="-7.25" y1="-0.25" x2="-6.75" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="-1.25" y1="-0.25" x2="-0.75" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="-3.25" y1="-0.25" x2="-2.75" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="2.75" y1="-0.25" x2="3.25" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="0.75" y1="-0.25" x2="1.25" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="6.75" y1="-0.25" x2="7.25" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="4.75" y1="-0.25" x2="5.25" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="10.75" y1="-0.25" x2="11.25" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="8.75" y1="-0.25" x2="9.25" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="14.75" y1="-0.25" x2="15.25" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="12.75" y1="-0.25" x2="13.25" y2="0.25" layer="51" rot="R270"/>
-</package>
 <package name="1X07M">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2MM"</description>
 <wire x1="7.25" y1="1.25" x2="7.25" y2="-1.25" width="0.2032" layer="21"/>
@@ -6169,6 +6085,46 @@ In this library the device names are the same as the pin names of the symbols, t
 <rectangle x1="3.75" y1="-0.25" x2="4.25" y2="0.25" layer="51" rot="R270"/>
 <rectangle x1="1.75" y1="-0.25" x2="2.25" y2="0.25" layer="51" rot="R270"/>
 <rectangle x1="5.75" y1="-0.25" x2="6.25" y2="0.25" layer="51" rot="R270"/>
+</package>
+<package name="1X05">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 0.1"</description>
+<wire x1="-6.35" y1="1.27" x2="-3.81" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="6.35" y2="1.27" width="0.254" layer="21"/>
+<wire x1="6.35" y1="-1.27" x2="-6.35" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="6.35" y1="1.27" x2="6.35" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.254" layer="21"/>
+<pad name="1" x="-5.08" y="0" drill="1.016" shape="square" rot="R90"/>
+<pad name="2" x="-2.54" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="3" x="0" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="4" x="2.54" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="5" x="5.08" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<text x="-6.4262" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-6.35" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+</package>
+<package name="1X05M">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2MM"</description>
+<wire x1="5.25" y1="1.25" x2="5.25" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="-1.25" x2="-5.25" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="-5.25" y1="-1.25" x2="-5.25" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="-5.25" y1="1.25" x2="5.25" y2="1.25" width="0.2032" layer="21"/>
+<pad name="1" x="-4" y="0" drill="0.9144" shape="square"/>
+<pad name="2" x="-2" y="0" drill="0.9144"/>
+<pad name="3" x="0" y="0" drill="0.9144" rot="R270"/>
+<pad name="4" x="2" y="0" drill="0.9144" rot="R270"/>
+<pad name="5" x="4" y="0" drill="0.9144" rot="R270"/>
+<text x="-6" y="-1" size="1.016" layer="25" ratio="14" rot="R90">&gt;NAME</text>
+<text x="7" y="-1" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.25" y1="-0.25" x2="-1.75" y2="0.25" layer="51"/>
+<rectangle x1="-4.25" y1="-0.25" x2="-3.75" y2="0.25" layer="51"/>
+<rectangle x1="1.75" y1="-0.25" x2="2.25" y2="0.25" layer="51" rot="R270"/>
+<rectangle x1="-0.25" y1="-0.25" x2="0.25" y2="0.25" layer="51" rot="R270"/>
+<rectangle x1="3.75" y1="-0.25" x2="4.25" y2="0.25" layer="51" rot="R270"/>
 </package>
 </packages>
 <symbols>
@@ -6199,29 +6155,18 @@ In this library the device names are the same as the pin names of the symbols, t
 <pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
 <pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
-<symbol name="PINHD16">
-<wire x1="-6.35" y1="-22.86" x2="1.27" y2="-22.86" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="-22.86" x2="1.27" y2="20.32" width="0.4064" layer="94"/>
-<wire x1="1.27" y1="20.32" x2="-6.35" y2="20.32" width="0.4064" layer="94"/>
-<wire x1="-6.35" y1="20.32" x2="-6.35" y2="-22.86" width="0.4064" layer="94"/>
-<text x="-6.35" y="20.955" size="1.778" layer="95">&gt;NAME</text>
-<text x="-6.35" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-2.54" y="17.78" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="2" x="-2.54" y="15.24" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="3" x="-2.54" y="12.7" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="4" x="-2.54" y="10.16" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="5" x="-2.54" y="7.62" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="6" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="7" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="8" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="9" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="10" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="11" x="-2.54" y="-7.62" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="12" x="-2.54" y="-10.16" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="13" x="-2.54" y="-12.7" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="14" x="-2.54" y="-15.24" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="15" x="-2.54" y="-17.78" visible="pad" length="short" direction="pas" function="dot"/>
-<pin name="16" x="-2.54" y="-20.32" visible="pad" length="short" direction="pas" function="dot"/>
+<symbol name="PINHD5">
+<wire x1="-6.35" y1="-7.62" x2="1.27" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="7.62" x2="-6.35" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="7.62" x2="-6.35" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-6.35" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="3" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="4" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="5" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas" function="dot"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6291,53 +6236,31 @@ In this library the device names are the same as the pin names of the symbols, t
 </device>
 </devices>
 </deviceset>
-<deviceset name="PINHD-1X16" prefix="JP" uservalue="yes">
+<deviceset name="PINHD-1X5" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
-<gate name="A" symbol="PINHD16" x="0" y="0"/>
+<gate name="A" symbol="PINHD5" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="1X16">
+<device name="" package="1X05">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="10" pad="10"/>
-<connect gate="A" pin="11" pad="11"/>
-<connect gate="A" pin="12" pad="12"/>
-<connect gate="A" pin="13" pad="13"/>
-<connect gate="A" pin="14" pad="14"/>
-<connect gate="A" pin="15" pad="15"/>
-<connect gate="A" pin="16" pad="16"/>
 <connect gate="A" pin="2" pad="2"/>
 <connect gate="A" pin="3" pad="3"/>
 <connect gate="A" pin="4" pad="4"/>
 <connect gate="A" pin="5" pad="5"/>
-<connect gate="A" pin="6" pad="6"/>
-<connect gate="A" pin="7" pad="7"/>
-<connect gate="A" pin="8" pad="8"/>
-<connect gate="A" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="M" package="1X16M">
+<device name="M" package="1X05M">
 <connects>
 <connect gate="A" pin="1" pad="1"/>
-<connect gate="A" pin="10" pad="10"/>
-<connect gate="A" pin="11" pad="11"/>
-<connect gate="A" pin="12" pad="12"/>
-<connect gate="A" pin="13" pad="13"/>
-<connect gate="A" pin="14" pad="14"/>
-<connect gate="A" pin="15" pad="15"/>
-<connect gate="A" pin="16" pad="16"/>
 <connect gate="A" pin="2" pad="2"/>
 <connect gate="A" pin="3" pad="3"/>
 <connect gate="A" pin="4" pad="4"/>
 <connect gate="A" pin="5" pad="5"/>
-<connect gate="A" pin="6" pad="6"/>
-<connect gate="A" pin="7" pad="7"/>
-<connect gate="A" pin="8" pad="8"/>
-<connect gate="A" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -9675,10 +9598,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="SUPPLY4" library="supply2" deviceset="GND" device=""/>
 <part name="U$1" library="Teensy_DIY_v1.0" deviceset="MK20DX256VLH7" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-1X16" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X16" device=""/>
-<part name="JP3" library="pinhead" deviceset="PINHD-1X16" device=""/>
-<part name="JP4" library="pinhead" deviceset="PINHD-1X16" device=""/>
 <part name="U1" library="SparkFun-PowerIC" deviceset="V_REG_78XX" device="7812" value="+12v"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="2.2uF"/>
 <part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="2.2uF"/>
@@ -9693,6 +9612,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="50k"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
+<part name="TEST2" library="pinhead" deviceset="PINHD-1X5" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9712,6 +9632,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <text x="-7.62" y="40.64" size="1.778" layer="91">FILT_V</text>
 <text x="-7.62" y="38.1" size="1.778" layer="91">GND</text>
 <text x="-7.62" y="35.56" size="1.778" layer="91">OUTPUT</text>
+<text x="205.74" y="12.7" size="1.778" layer="91">VCC</text>
+<text x="205.74" y="10.16" size="1.778" layer="91">RESET</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="53.34" y="60.96"/>
@@ -9733,10 +9655,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="C3" gate="G$1" x="-93.98" y="43.18"/>
 <instance part="SUPPLY4" gate="GND" x="33.02" y="88.9" rot="R180"/>
 <instance part="U$1" gate="G$1" x="144.78" y="15.24"/>
-<instance part="JP1" gate="A" x="205.74" y="38.1" rot="R180"/>
-<instance part="JP2" gate="A" x="215.9" y="-5.08" rot="R180"/>
-<instance part="JP3" gate="A" x="226.06" y="43.18"/>
-<instance part="JP4" gate="A" x="208.28" y="-7.62"/>
 <instance part="U1" gate="G$1" x="129.54" y="101.6"/>
 <instance part="C5" gate="G$1" x="121.92" y="86.36"/>
 <instance part="C6" gate="G$1" x="139.7" y="86.36"/>
@@ -9751,6 +9669,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="R5" gate="G$1" x="106.68" y="-38.1" rot="R90"/>
 <instance part="C9" gate="G$1" x="114.3" y="-30.48" rot="R90"/>
 <instance part="SUPPLY5" gate="GND" x="106.68" y="-48.26"/>
+<instance part="TEST2" gate="A" x="203.2" y="7.62"/>
 </instances>
 <busses>
 </busses>
@@ -10042,12 +9961,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="177.8" y1="63.5" x2="187.96" y2="63.5" width="0.1524" layer="91"/>
 <junction x="177.8" y="63.5"/>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="63.5" x2="187.96" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="63.5" x2="187.96" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="12.7" x2="187.96" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="177.8" y1="78.74" x2="111.76" y2="78.74" width="0.1524" layer="91"/>
 <junction x="177.8" y="78.74"/>
 <wire x1="111.76" y1="78.74" x2="111.76" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="SERIAL" gate="A" pin="3"/>
 <wire x1="111.76" y1="-7.62" x2="99.06" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="TEST2" gate="A" pin="1"/>
+<wire x1="200.66" y1="12.7" x2="187.96" y2="12.7" width="0.1524" layer="91"/>
+<junction x="187.96" y="12.7"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -10085,6 +10008,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="187.96" y1="0" x2="190.5" y2="0" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="0" x2="190.5" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="187.96" y="0"/>
+<junction x="190.5" y="0"/>
+<pinref part="TEST2" gate="A" pin="2"/>
+<wire x1="190.5" y1="10.16" x2="190.5" y2="0" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="10.16" x2="190.5" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">

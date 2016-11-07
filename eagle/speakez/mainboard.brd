@@ -1427,24 +1427,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 </package>
-<package name="1X05M">
-<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2MM"</description>
-<wire x1="5.25" y1="1.25" x2="5.25" y2="-1.25" width="0.2032" layer="21"/>
-<wire x1="5.25" y1="-1.25" x2="-5.25" y2="-1.25" width="0.2032" layer="21"/>
-<wire x1="-5.25" y1="-1.25" x2="-5.25" y2="1.25" width="0.2032" layer="21"/>
-<wire x1="-5.25" y1="1.25" x2="5.25" y2="1.25" width="0.2032" layer="21"/>
-<pad name="1" x="-4" y="0" drill="0.9144" shape="square"/>
-<pad name="2" x="-2" y="0" drill="0.9144"/>
-<pad name="3" x="0" y="0" drill="0.9144" rot="R270"/>
-<pad name="4" x="2" y="0" drill="0.9144" rot="R270"/>
-<pad name="5" x="4" y="0" drill="0.9144" rot="R270"/>
-<text x="-6" y="-1" size="1.016" layer="25" ratio="14" rot="R90">&gt;NAME</text>
-<text x="7" y="-1" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.25" y1="-0.25" x2="-1.75" y2="0.25" layer="51"/>
-<rectangle x1="-4.25" y1="-0.25" x2="-3.75" y2="0.25" layer="51"/>
-<rectangle x1="1.75" y1="-0.25" x2="2.25" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="-0.25" y1="-0.25" x2="0.25" y2="0.25" layer="51" rot="R270"/>
-<rectangle x1="3.75" y1="-0.25" x2="4.25" y2="0.25" layer="51" rot="R270"/>
+<package name="1X07">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 0.1"</description>
+<wire x1="8.89" y1="-1.27" x2="-8.89" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="-8.89" y1="1.27" x2="-8.89" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="8.89" y1="1.27" x2="8.89" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="8.89" y1="1.27" x2="-6.35" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="-8.89" y2="1.27" width="0.254" layer="21"/>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.254" layer="21"/>
+<pad name="1" x="-7.62" y="0" drill="1.016" shape="square" rot="R90"/>
+<pad name="2" x="-5.08" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="3" x="-2.54" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="4" x="0" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="5" x="2.54" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="6" x="5.08" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="7" x="7.62" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<text x="-8.9662" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-8.89" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="-2.794" y1="-0.254" x2="-2.286" y2="0.254" layer="51"/>
+<rectangle x1="-5.334" y1="-0.254" x2="-4.826" y2="0.254" layer="51"/>
+<rectangle x1="-7.874" y1="-0.254" x2="-7.366" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
 </package>
 <package name="1X04M">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt; - 2MM"</description>
@@ -2224,7 +2230,7 @@ design rules under a new name.</description>
 <element name="FROMBOARD" library="pinhead" package="1X04" value="" x="49.53" y="60.96"/>
 <element name="R1" library="rcl" package="M0805" value="5kohm" x="63.5" y="36.83"/>
 <element name="R2" library="rcl" package="M0805" value="5kohm" x="63.5" y="31.75"/>
-<element name="TESTPINS" library="pinhead" package="1X05M" value="" x="58.42" y="39.37" rot="R90"/>
+<element name="TESTPINS" library="pinhead" package="1X07" value="" x="58.42" y="39.37" rot="R90"/>
 <element name="TOAMBIENT" library="pinhead" package="1X04M" value="" x="63.5" y="46.99"/>
 <element name="VOICE" library="InvenSense-INMP621ACEZ-R7" package="ADI_ADMP521A" value="ADMP621ACEZ-RL7" x="63.5" y="17.78">
 <attribute name="PACKAGE" value="5LGA" x="63.5" y="17.78" size="1.778" layer="27" display="off"/>
@@ -2234,7 +2240,6 @@ design rules under a new name.</description>
 <attribute name="OC_FARNELL" value="2361525 " x="63.5" y="17.78" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C3" library="SparkFun-Capacitors" package="0805" value="0.1uF" x="-22.86" y="6.35"/>
-<element name="TESTPINS1" library="pinhead" package="1X05M" value="" x="-16.51" y="0"/>
 <element name="U$1" library="Teensy_DIY_v1.0" package="QFP50P1200X1200X160-64N" value="MK20DX256VLH7" x="-20.32" y="-15.24"/>
 <element name="JP1" library="pinhead" package="1X16" value="" x="0" y="-30.48"/>
 <element name="JP2" library="pinhead" package="1X16" value="" x="0" y="-45.72"/>
@@ -2252,26 +2257,28 @@ design rules under a new name.</description>
 <element name="R4" library="SparkFun-Passives" package="0805" value="10k" x="-60.96" y="-86.36"/>
 <element name="PROGRAMMER" library="pel_hdr" package="PH005-1-5" value="PH1X5-05" x="-55.88" y="-95.25"/>
 <element name="SERIAL" library="pinhead" package="1X04" value="" x="-50.8" y="-109.22"/>
+<element name="R5" library="SparkFun-Passives" package="0805" value="50k" x="-64.77" y="-114.3"/>
+<element name="C9" library="SparkFun-Capacitors" package="0805" value="" x="-68.58" y="-114.3"/>
 </elements>
 <signals>
 <signal name="N$1">
 <contactref element="R1" pad="2"/>
 <contactref element="C1" pad="1"/>
-<contactref element="TESTPINS" pad="4"/>
 <contactref element="U$1" pad="38"/>
 <contactref element="U$1" pad="11"/>
-<wire x1="58.42" y1="41.37" x2="62.55" y2="41.91" width="0" layer="19" extent="1-1"/>
+<contactref element="TESTPINS" pad="4"/>
+<wire x1="58.42" y1="39.37" x2="62.55" y2="41.91" width="0" layer="19" extent="1-1"/>
 <wire x1="64.45" y1="36.83" x2="62.55" y2="41.91" width="0" layer="19" extent="1-1"/>
-<wire x1="-14.605" y1="-16.4846" x2="58.42" y2="41.37" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.605" y1="-16.4846" x2="58.42" y2="39.37" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.035" y1="-16.4846" x2="-14.605" y2="-16.4846" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R2" pad="2"/>
 <contactref element="C2" pad="1"/>
-<contactref element="TESTPINS" pad="5"/>
 <contactref element="U$1" pad="37"/>
 <contactref element="U$1" pad="12"/>
-<wire x1="64.45" y1="31.75" x2="58.42" y2="43.37" width="0" layer="19" extent="1-1"/>
+<contactref element="TESTPINS" pad="5"/>
+<wire x1="64.45" y1="31.75" x2="58.42" y2="41.91" width="0" layer="19" extent="1-1"/>
 <wire x1="62.55" y1="26.67" x2="64.45" y2="31.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.605" y1="-16.9926" x2="62.55" y2="26.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.035" y1="-16.9926" x2="-14.605" y2="-16.9926" width="0" layer="19" extent="1-1"/>
@@ -2285,6 +2292,9 @@ design rules under a new name.</description>
 <contactref element="C4" pad="1"/>
 <contactref element="TOAMBIENT" pad="3"/>
 <contactref element="R3" pad="1"/>
+<contactref element="R5" pad="1"/>
+<contactref element="TESTPINS" pad="6"/>
+<wire x1="-58.05" y1="-86.36" x2="-65.67" y2="-114.3" width="0" layer="19" extent="1-1"/>
 <wire x1="61.7728" y1="17.78" x2="-58.05" y2="-86.36" width="0" layer="19" extent="1-1"/>
 <wire x1="62.5348" y1="17.78" x2="61.7728" y2="17.78" width="0" layer="19" extent="1-1"/>
 <wire x1="63.9064" y1="18.2372" x2="62.5348" y2="17.78" width="0" layer="19" extent="1-1"/>
@@ -2292,24 +2302,25 @@ design rules under a new name.</description>
 <wire x1="64.45" y1="26.67" x2="62.6" y2="24.13" width="0" layer="19" extent="1-1"/>
 <wire x1="64.45" y1="41.91" x2="64.45" y2="26.67" width="0" layer="19" extent="1-1"/>
 <wire x1="64.5" y1="46.99" x2="64.45" y2="41.91" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="44.45" x2="64.45" y2="41.91" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="VOICE" pad="5"/>
 <contactref element="R2" pad="1"/>
-<contactref element="TESTPINS" pad="3"/>
 <contactref element="U$1" pad="36"/>
 <contactref element="U$1" pad="9"/>
-<wire x1="62.55" y1="31.75" x2="58.42" y2="39.37" width="0" layer="19" extent="1-1"/>
+<contactref element="TESTPINS" pad="3"/>
+<wire x1="62.55" y1="31.75" x2="58.42" y2="36.83" width="0" layer="19" extent="1-1"/>
 <wire x1="64.6176" y1="17.3228" x2="62.55" y2="31.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.605" y1="-17.5006" x2="64.6176" y2="17.3228" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.035" y1="-15.494" x2="-14.605" y2="-17.5006" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TEST-PINS">
-<contactref element="TESTPINS" pad="1"/>
 <contactref element="VOICE" pad="1"/>
 <contactref element="TOAMBIENT" pad="2"/>
-<wire x1="58.42" y1="35.37" x2="62.5" y2="46.99" width="0" layer="19" extent="1-1"/>
-<wire x1="64.6176" y1="18.2372" x2="58.42" y2="35.37" width="0" layer="19" extent="1-1"/>
+<contactref element="TESTPINS" pad="1"/>
+<wire x1="58.42" y1="31.75" x2="62.5" y2="46.99" width="0" layer="19" extent="1-1"/>
+<wire x1="64.6176" y1="18.2372" x2="58.42" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$5">
 <contactref element="AMBIENT" pad="6"/>
@@ -2341,12 +2352,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$10">
 <contactref element="TOAMBIENT" pad="4"/>
-<contactref element="TESTPINS" pad="2"/>
 <contactref element="R1" pad="1"/>
 <contactref element="U$1" pad="10"/>
+<contactref element="TESTPINS" pad="2"/>
 <wire x1="62.55" y1="36.83" x2="66.5" y2="46.99" width="0" layer="19" extent="1-1"/>
-<wire x1="58.42" y1="37.37" x2="62.55" y2="36.83" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.035" y1="-16.002" x2="58.42" y2="37.37" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="34.29" x2="62.55" y2="36.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.035" y1="-16.002" x2="58.42" y2="34.29" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="TOAMBIENT" pad="1"/>
@@ -2471,6 +2482,18 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="2"/>
 <contactref element="SERIAL" pad="2"/>
 <wire x1="-26.035" y1="-11.9888" x2="-52.07" y2="-109.22" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$27">
+<contactref element="U$1" pad="18"/>
+<contactref element="C9" pad="2"/>
+<wire x1="-23.5712" y1="-20.955" x2="-67.68" y2="-114.3" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$28">
+<contactref element="C9" pad="1"/>
+<contactref element="R5" pad="2"/>
+<contactref element="TESTPINS" pad="7"/>
+<wire x1="-63.87" y1="-114.3" x2="-69.48" y2="-114.3" width="0" layer="19" extent="1-1"/>
+<wire x1="58.42" y1="46.99" x2="-63.87" y2="-114.3" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

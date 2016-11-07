@@ -8796,6 +8796,11 @@ Spark Fun Electronics SKU : COM-00107</description>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
 <junction x="129.54" y="83.82"/>
+<wire x1="139.7" y1="83.82" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
+<junction x="139.7" y="83.82"/>
+<wire x1="205.74" y1="83.82" x2="205.74" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VSS"/>
+<wire x1="205.74" y1="20.32" x2="175.26" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -8822,6 +8827,14 @@ Spark Fun Electronics SKU : COM-00107</description>
 <junction x="12.7" y="30.48"/>
 <wire x1="144.78" y1="124.46" x2="5.08" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="124.46" x2="5.08" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="101.6" x2="177.8" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="101.6" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="177.8" y1="66.04" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="63.5" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VOUT3V3"/>
+<wire x1="175.26" y1="66.04" x2="177.8" y2="66.04" width="0.1524" layer="91"/>
+<junction x="177.8" y="66.04"/>
 </segment>
 </net>
 </nets>

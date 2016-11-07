@@ -8691,12 +8691,10 @@ Spark Fun Electronics SKU : COM-00107</description>
 <wire x1="30.48" y1="55.88" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="55.88" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
 <junction x="30.48" y="55.88"/>
-<pinref part="U$1" gate="G$1" pin="EXTAL32"/>
-<wire x1="175.26" y1="5.08" x2="180.34" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="5.08" x2="180.34" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="-40.64" x2="73.66" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="73.66" y1="-40.64" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-17.78" x2="73.66" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="45.72" x2="30.48" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D33/PWM/TOUCH"/>
+<wire x1="116.84" y1="-17.78" x2="73.66" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">

@@ -8605,8 +8605,9 @@ Spark Fun Electronics SKU : COM-00107</description>
 <wire x1="-12.7" y1="43.18" x2="-22.86" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="83.82" y1="38.1" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
 <junction x="83.82" y="38.1"/>
-<wire x1="88.9" y1="38.1" x2="88.9" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="-27.94" x2="88.9" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="38.1" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D18/A4/SDA0/TOUCH"/>
+<wire x1="116.84" y1="20.32" x2="88.9" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8621,10 +8622,11 @@ Spark Fun Electronics SKU : COM-00107</description>
 <wire x1="-20.32" y1="5.08" x2="66.04" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="TESTPINS" gate="A" pin="5"/>
 <wire x1="-12.7" y1="40.64" x2="-20.32" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="17.78" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="86.36" y1="30.48" x2="66.04" y2="30.48" width="0.1524" layer="91"/>
 <junction x="66.04" y="30.48"/>
-<wire x1="119.38" y1="-30.48" x2="86.36" y2="-30.48" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D19/A5/SCL0/TOUCH"/>
+<wire x1="116.84" y1="17.78" x2="86.36" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8669,11 +8671,11 @@ Spark Fun Electronics SKU : COM-00107</description>
 <pinref part="TESTPINS" gate="A" pin="3"/>
 <wire x1="-25.4" y1="45.72" x2="-12.7" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="45.72" x2="-10.16" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="-25.4" x2="91.44" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="22.86" x2="91.44" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="91.44" y1="40.64" x2="48.26" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="40.64" x2="48.26" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="A12/ADC0_DP3"/>
-<wire x1="116.84" y1="-25.4" x2="91.44" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D17/A3/TOUCH"/>
+<wire x1="116.84" y1="22.86" x2="91.44" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TEST-PINS" class="0">
@@ -8760,9 +8762,8 @@ Spark Fun Electronics SKU : COM-00107</description>
 <wire x1="-25.4" y1="48.26" x2="-12.7" y2="48.26" width="0.1524" layer="91"/>
 <junction x="43.18" y="73.66"/>
 <wire x1="43.18" y1="73.66" x2="93.98" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="73.66" x2="93.98" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="-22.86" x2="121.92" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="-22.86" x2="121.92" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="73.66" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="25.4" x2="93.98" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -8828,6 +8829,11 @@ Spark Fun Electronics SKU : COM-00107</description>
 <wire x1="177.8" y1="101.6" x2="177.8" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="177.8" y1="63.5" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<wire x1="121.92" y1="-22.86" x2="121.92" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

@@ -9607,12 +9607,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R3" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="66 ohms"/>
 <part name="SUPPLY3" library="supply2" deviceset="GND" device=""/>
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10k"/>
-<part name="PROGRAMMER" library="pel_hdr" deviceset="PH1X5" device="-05"/>
+<part name="PROGRAMMER-LT" library="pel_hdr" deviceset="PH1X5" device="-05"/>
 <part name="SERIAL" library="pinhead" deviceset="PINHD-1X4" device=""/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="50k"/>
 <part name="C9" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="TEST2" library="pinhead" deviceset="PINHD-1X5" device=""/>
+<part name="PROGRAMMER-LB" library="pel_hdr" deviceset="PH1X5" device="-05"/>
+<part name="PROGRAMMER-RT" library="pel_hdr" deviceset="PH1X5" device="-05"/>
+<part name="PROGRAMMER-RB" library="pel_hdr" deviceset="PH1X5" device="-05"/>
+<part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100k"/>
 </parts>
 <sheets>
 <sheet>
@@ -9664,12 +9668,16 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="R3" gate="G$1" x="104.14" y="7.62"/>
 <instance part="SUPPLY3" gate="GND" x="99.06" y="5.08"/>
 <instance part="R4" gate="G$1" x="187.96" y="5.08" rot="R270"/>
-<instance part="PROGRAMMER" gate="G$1" x="198.12" y="-7.62" rot="R180"/>
+<instance part="PROGRAMMER-LT" gate="G$1" x="200.66" y="-7.62" rot="R180"/>
 <instance part="SERIAL" gate="A" x="96.52" y="-7.62" rot="R180"/>
 <instance part="R5" gate="G$1" x="106.68" y="-38.1" rot="R90"/>
 <instance part="C9" gate="G$1" x="114.3" y="-30.48" rot="R90"/>
 <instance part="SUPPLY5" gate="GND" x="106.68" y="-48.26"/>
 <instance part="TEST2" gate="A" x="203.2" y="7.62"/>
+<instance part="PROGRAMMER-LB" gate="G$1" x="200.66" y="-20.32" rot="R180"/>
+<instance part="PROGRAMMER-RT" gate="G$1" x="210.82" y="-7.62" rot="R180"/>
+<instance part="PROGRAMMER-RB" gate="G$1" x="210.82" y="-20.32" rot="R180"/>
+<instance part="R6" gate="G$1" x="185.42" y="-10.16" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9892,36 +9900,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="BATTERY" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="109.22" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="106.68" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
-<wire x1="116.84" y1="83.82" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="83.82" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="129.54" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
-<junction x="129.54" y="83.82"/>
-<wire x1="139.7" y1="83.82" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
-<junction x="139.7" y="83.82"/>
-<wire x1="149.86" y1="83.82" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="83.82" x2="205.74" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VSS"/>
-<wire x1="205.74" y1="20.32" x2="175.26" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<junction x="116.84" y="83.82"/>
-<pinref part="C8" gate="G$1" pin="2"/>
-<junction x="149.86" y="83.82"/>
-<wire x1="111.76" y1="83.82" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
-<junction x="111.76" y="83.82"/>
-<wire x1="109.22" y1="83.82" x2="109.22" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="SERIAL" gate="A" pin="4"/>
-<wire x1="109.22" y1="-5.08" x2="99.06" y2="-5.08" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="IN"/>
@@ -9969,8 +9947,15 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="SERIAL" gate="A" pin="3"/>
 <wire x1="111.76" y1="-7.62" x2="99.06" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="TEST2" gate="A" pin="1"/>
-<wire x1="200.66" y1="12.7" x2="187.96" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="12.7" x2="193.04" y2="12.7" width="0.1524" layer="91"/>
 <junction x="187.96" y="12.7"/>
+<pinref part="PROGRAMMER-LT" gate="G$1" pin="1"/>
+<wire x1="193.04" y1="12.7" x2="187.96" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="-7.62" x2="193.04" y2="12.7" width="0.1524" layer="91"/>
+<junction x="193.04" y="12.7"/>
+<wire x1="187.96" y1="12.7" x2="185.42" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="12.7" x2="185.42" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -10004,50 +9989,37 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="U$1" gate="G$1" pin="RESET"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="187.96" y1="0" x2="175.26" y2="0" width="0.1524" layer="91"/>
-<pinref part="PROGRAMMER" gate="G$1" pin="1"/>
 <wire x1="187.96" y1="0" x2="190.5" y2="0" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="0" x2="190.5" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="187.96" y="0"/>
-<junction x="190.5" y="0"/>
 <pinref part="TEST2" gate="A" pin="2"/>
-<wire x1="190.5" y1="10.16" x2="190.5" y2="0" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="10.16" x2="190.5" y2="10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PTA0"/>
-<wire x1="175.26" y1="-2.54" x2="185.42" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="-2.54" x2="185.42" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="PROGRAMMER" gate="G$1" pin="2"/>
-<wire x1="190.5" y1="-10.16" x2="185.42" y2="-10.16" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="PTA1"/>
-<wire x1="175.26" y1="-5.08" x2="182.88" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="-5.08" x2="182.88" y2="-12.7" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="-12.7" x2="190.5" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="PROGRAMMER" gate="G$1" pin="3"/>
+<wire x1="190.5" y1="0" x2="195.58" y2="0" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="10.16" x2="195.58" y2="0" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="10.16" x2="195.58" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="0" x2="190.5" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="190.5" y="0"/>
+<pinref part="PROGRAMMER-LB" gate="G$1" pin="3"/>
+<wire x1="190.5" y1="-25.4" x2="193.04" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PTA2"/>
 <wire x1="175.26" y1="-7.62" x2="180.34" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="-7.62" x2="180.34" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="180.34" y1="-15.24" x2="190.5" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="PROGRAMMER" gate="G$1" pin="4"/>
+<wire x1="180.34" y1="-7.62" x2="180.34" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="PROGRAMMER-LT" gate="G$1" pin="3"/>
+<wire x1="193.04" y1="-12.7" x2="180.34" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PTA3"/>
 <wire x1="175.26" y1="-10.16" x2="177.8" y2="-10.16" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="-10.16" x2="177.8" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="177.8" y1="-17.78" x2="190.5" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="PROGRAMMER" gate="G$1" pin="5"/>
+<wire x1="177.8" y1="-10.16" x2="177.8" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="PROGRAMMER-LT" gate="G$1" pin="4"/>
+<wire x1="193.04" y1="-15.24" x2="185.42" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="-15.24" x2="177.8" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="185.42" y="-15.24"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -10083,6 +10055,82 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="TESTPINS" gate="A" pin="7"/>
 <wire x1="-12.7" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="35.56" x2="-15.24" y2="-30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="PROGRAMMER-RT" gate="G$1" pin="2"/>
+<pinref part="PROGRAMMER-RT" gate="G$1" pin="3"/>
+<wire x1="203.2" y1="-10.16" x2="203.2" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="PROGRAMMER-RT" gate="G$1" pin="4"/>
+<wire x1="203.2" y1="-15.24" x2="203.2" y2="-12.7" width="0.1524" layer="91"/>
+<junction x="203.2" y="-12.7"/>
+<pinref part="PROGRAMMER-RT" gate="G$1" pin="5"/>
+<wire x1="203.2" y1="-15.24" x2="203.2" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="203.2" y="-15.24"/>
+<pinref part="PROGRAMMER-RB" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="-17.78" x2="203.2" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="203.2" y="-17.78"/>
+<pinref part="PROGRAMMER-RB" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="-20.32" x2="203.2" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="203.2" y="-20.32"/>
+<pinref part="PROGRAMMER-RB" gate="G$1" pin="3"/>
+<wire x1="203.2" y1="-22.86" x2="203.2" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="203.2" y="-22.86"/>
+<pinref part="PROGRAMMER-RB" gate="G$1" pin="4"/>
+<wire x1="203.2" y1="-25.4" x2="203.2" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="203.2" y="-25.4"/>
+<pinref part="PROGRAMMER-RB" gate="G$1" pin="5"/>
+<wire x1="203.2" y1="-27.94" x2="203.2" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="203.2" y="-27.94"/>
+<pinref part="BATTERY" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="109.22" x2="129.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="106.68" x2="111.76" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="106.68" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<wire x1="116.84" y1="83.82" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="83.82" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="83.82" x2="139.7" y2="83.82" width="0.1524" layer="91"/>
+<junction x="129.54" y="83.82"/>
+<wire x1="139.7" y1="83.82" x2="149.86" y2="83.82" width="0.1524" layer="91"/>
+<junction x="139.7" y="83.82"/>
+<wire x1="149.86" y1="83.82" x2="205.74" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="83.82" x2="205.74" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VSS"/>
+<wire x1="205.74" y1="20.32" x2="175.26" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<junction x="116.84" y="83.82"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<junction x="149.86" y="83.82"/>
+<wire x1="111.76" y1="83.82" x2="109.22" y2="83.82" width="0.1524" layer="91"/>
+<junction x="111.76" y="83.82"/>
+<wire x1="109.22" y1="83.82" x2="109.22" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="SERIAL" gate="A" pin="4"/>
+<wire x1="109.22" y1="-5.08" x2="99.06" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-10.16" x2="205.74" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-10.16" x2="205.74" y2="20.32" width="0.1524" layer="91"/>
+<junction x="203.2" y="-10.16"/>
+<junction x="205.74" y="20.32"/>
+</segment>
+</net>
+<net name="N$14" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PTA0"/>
+<wire x1="175.26" y1="-2.54" x2="182.88" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="-2.54" x2="182.88" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="PROGRAMMER-LT" gate="G$1" pin="5"/>
+<wire x1="182.88" y1="-17.78" x2="193.04" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PTA1"/>
+<wire x1="175.26" y1="-5.08" x2="187.96" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="-5.08" x2="187.96" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="PROGRAMMER-LB" gate="G$1" pin="4"/>
+<wire x1="187.96" y1="-27.94" x2="193.04" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

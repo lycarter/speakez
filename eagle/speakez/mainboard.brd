@@ -2229,11 +2229,15 @@ design rules under a new name.</description>
 <element name="D2" library="SparkFun-LED" package="LED-1206" value="" x="-52.07" y="-86.36"/>
 <element name="R3" library="SparkFun-Passives" package="0805" value="66 ohms" x="-57.15" y="-86.36"/>
 <element name="R4" library="SparkFun-Passives" package="0805" value="10k" x="-60.96" y="-86.36"/>
-<element name="PROGRAMMER" library="pel_hdr" package="PH005-1-5" value="PH1X5-05" x="-55.88" y="-95.25"/>
+<element name="PROGRAMMER-LT" library="pel_hdr" package="PH005-1-5" value="PH1X5-05" x="-55.88" y="-95.25"/>
 <element name="SERIAL" library="pinhead" package="1X04" value="" x="-50.8" y="-109.22"/>
 <element name="R5" library="SparkFun-Passives" package="0805" value="50k" x="-64.77" y="-114.3"/>
 <element name="C9" library="SparkFun-Capacitors" package="0805" value="" x="-68.58" y="-114.3"/>
 <element name="TEST2" library="pinhead" package="1X05" value="" x="-57.15" y="-124.46"/>
+<element name="PROGRAMMER-LB" library="pel_hdr" package="PH005-1-5" value="PH1X5-05" x="-63.5" y="-138.43"/>
+<element name="PROGRAMMER-RT" library="pel_hdr" package="PH005-1-5" value="PH1X5-05" x="-63.5" y="-151.13"/>
+<element name="PROGRAMMER-RB" library="pel_hdr" package="PH005-1-5" value="PH1X5-05" x="-63.5" y="-163.83"/>
+<element name="R6" library="SparkFun-Passives" package="0805" value="100k" x="-72.39" y="-167.64"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -2355,25 +2359,6 @@ design rules under a new name.</description>
 <contactref element="D1" pad="A"/>
 <wire x1="80.975" y1="40.64" x2="77.2" y2="43.18" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$14">
-<contactref element="BATTERY" pad="2"/>
-<contactref element="U1" pad="3"/>
-<contactref element="C6" pad="2"/>
-<contactref element="U$1" pad="31"/>
-<contactref element="U$1" pad="47"/>
-<contactref element="U$1" pad="4"/>
-<contactref element="C7" pad="2"/>
-<contactref element="C8" pad="2"/>
-<contactref element="SERIAL" pad="4"/>
-<wire x1="-48.63" y1="-81.28" x2="-46.99" y2="-109.22" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.44" y1="-81.28" x2="-48.63" y2="-81.28" width="0" layer="19" extent="1-1"/>
-<wire x1="-44.82" y1="-81.28" x2="-48.63" y2="-81.28" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.29" y1="-72.43" x2="-44.82" y2="-81.28" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.0688" y1="-20.955" x2="-34.29" y2="-72.43" width="0" layer="19" extent="1-1"/>
-<wire x1="-14.605" y1="-11.9888" x2="-17.0688" y2="-20.955" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.035" y1="-12.9794" x2="-14.605" y2="-11.9888" width="0" layer="19" extent="1-1"/>
-<wire x1="75.2" y1="43.18" x2="-14.605" y2="-11.9888" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$15">
 <contactref element="U1" pad="1"/>
 <contactref element="D1" pad="C"/>
@@ -2395,8 +2380,12 @@ design rules under a new name.</description>
 <contactref element="R4" pad="1"/>
 <contactref element="SERIAL" pad="3"/>
 <contactref element="TEST2" pad="1"/>
+<contactref element="PROGRAMMER-LT" pad="1"/>
+<contactref element="R6" pad="1"/>
+<wire x1="-62.23" y1="-124.46" x2="-73.29" y2="-167.64" width="0" layer="19" extent="1-1"/>
 <wire x1="-49.53" y1="-109.22" x2="-62.23" y2="-124.46" width="0" layer="19" extent="1-1"/>
-<wire x1="-61.86" y1="-86.36" x2="-49.53" y2="-109.22" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.88" y1="-95.25" x2="-49.53" y2="-109.22" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.86" y1="-86.36" x2="-55.88" y2="-95.25" width="0" layer="19" extent="1-1"/>
 <wire x1="-54.24" y1="-81.28" x2="-61.86" y2="-86.36" width="0" layer="19" extent="1-1"/>
 <wire x1="-46.62" y1="-81.28" x2="-54.24" y2="-81.28" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.01" y1="-79.73" x2="-46.62" y2="-81.28" width="0" layer="19" extent="1-1"/>
@@ -2426,31 +2415,23 @@ design rules under a new name.</description>
 <signal name="N$20">
 <contactref element="U$1" pad="34"/>
 <contactref element="R4" pad="2"/>
-<contactref element="PROGRAMMER" pad="1"/>
 <contactref element="TEST2" pad="2"/>
-<wire x1="-55.88" y1="-95.25" x2="-59.69" y2="-124.46" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.06" y1="-86.36" x2="-55.88" y2="-95.25" width="0" layer="19" extent="1-1"/>
+<contactref element="PROGRAMMER-LB" pad="3"/>
+<wire x1="-59.69" y1="-124.46" x2="-60.96" y2="-138.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.06" y1="-86.36" x2="-59.69" y2="-124.46" width="0" layer="19" extent="1-1"/>
 <wire x1="-14.605" y1="-18.4912" x2="-60.06" y2="-86.36" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$21">
-<contactref element="U$1" pad="22"/>
-<contactref element="PROGRAMMER" pad="2"/>
-<wire x1="-21.5646" y1="-20.955" x2="-54.61" y2="-95.25" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$22">
-<contactref element="U$1" pad="23"/>
-<contactref element="PROGRAMMER" pad="3"/>
-<wire x1="-21.082" y1="-20.955" x2="-53.34" y2="-95.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$23">
 <contactref element="U$1" pad="24"/>
-<contactref element="PROGRAMMER" pad="4"/>
-<wire x1="-20.574" y1="-20.955" x2="-52.07" y2="-95.25" width="0" layer="19" extent="1-1"/>
+<contactref element="PROGRAMMER-LT" pad="3"/>
+<wire x1="-20.574" y1="-20.955" x2="-53.34" y2="-95.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$24">
 <contactref element="U$1" pad="25"/>
-<contactref element="PROGRAMMER" pad="5"/>
-<wire x1="-20.066" y1="-20.955" x2="-50.8" y2="-95.25" width="0" layer="19" extent="1-1"/>
+<contactref element="PROGRAMMER-LT" pad="4"/>
+<contactref element="R6" pad="2"/>
+<wire x1="-52.07" y1="-95.25" x2="-71.49" y2="-167.64" width="0" layer="19" extent="1-1"/>
+<wire x1="-20.066" y1="-20.955" x2="-52.07" y2="-95.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$25">
 <contactref element="SERIAL" pad="1"/>
@@ -2473,6 +2454,53 @@ design rules under a new name.</description>
 <contactref element="TESTPINS" pad="7"/>
 <wire x1="-63.87" y1="-114.3" x2="-69.48" y2="-114.3" width="0" layer="19" extent="1-1"/>
 <wire x1="58.42" y1="46.99" x2="-63.87" y2="-114.3" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$29">
+<contactref element="PROGRAMMER-RT" pad="2"/>
+<contactref element="PROGRAMMER-RT" pad="3"/>
+<contactref element="PROGRAMMER-RT" pad="4"/>
+<contactref element="PROGRAMMER-RT" pad="5"/>
+<contactref element="PROGRAMMER-RB" pad="1"/>
+<contactref element="PROGRAMMER-RB" pad="2"/>
+<contactref element="PROGRAMMER-RB" pad="3"/>
+<contactref element="PROGRAMMER-RB" pad="4"/>
+<contactref element="PROGRAMMER-RB" pad="5"/>
+<contactref element="BATTERY" pad="2"/>
+<contactref element="U1" pad="3"/>
+<contactref element="C6" pad="2"/>
+<contactref element="U$1" pad="31"/>
+<contactref element="U$1" pad="47"/>
+<contactref element="U$1" pad="4"/>
+<contactref element="C7" pad="2"/>
+<contactref element="C8" pad="2"/>
+<contactref element="SERIAL" pad="4"/>
+<wire x1="-62.23" y1="-163.83" x2="-63.5" y2="-163.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.96" y1="-163.83" x2="-62.23" y2="-163.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.69" y1="-163.83" x2="-60.96" y2="-163.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.42" y1="-163.83" x2="-59.69" y2="-163.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-62.23" y1="-151.13" x2="-62.23" y2="-163.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.96" y1="-151.13" x2="-62.23" y2="-151.13" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.69" y1="-151.13" x2="-60.96" y2="-151.13" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.42" y1="-151.13" x2="-59.69" y2="-151.13" width="0" layer="19" extent="1-1"/>
+<wire x1="-46.99" y1="-109.22" x2="-58.42" y2="-151.13" width="0" layer="19" extent="1-1"/>
+<wire x1="-48.63" y1="-81.28" x2="-46.99" y2="-109.22" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.44" y1="-81.28" x2="-48.63" y2="-81.28" width="0" layer="19" extent="1-1"/>
+<wire x1="-44.82" y1="-81.28" x2="-48.63" y2="-81.28" width="0" layer="19" extent="1-1"/>
+<wire x1="-34.29" y1="-72.43" x2="-44.82" y2="-81.28" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.0688" y1="-20.955" x2="-34.29" y2="-72.43" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.605" y1="-11.9888" x2="-17.0688" y2="-20.955" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.035" y1="-12.9794" x2="-14.605" y2="-11.9888" width="0" layer="19" extent="1-1"/>
+<wire x1="75.2" y1="43.18" x2="-14.605" y2="-11.9888" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14">
+<contactref element="U$1" pad="22"/>
+<contactref element="PROGRAMMER-LT" pad="5"/>
+<wire x1="-21.5646" y1="-20.955" x2="-50.8" y2="-95.25" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$21">
+<contactref element="U$1" pad="23"/>
+<contactref element="PROGRAMMER-LB" pad="4"/>
+<wire x1="-21.082" y1="-20.955" x2="-59.69" y2="-138.43" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

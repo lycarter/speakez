@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5876,128 +5876,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
-<library name="InvenSense-INMP621ACEZ-R7">
-<packages>
-<package name="ADI_ADMP521A">
-<smd name="1" x="1.1176" y="0.4572" dx="0.4064" dy="0.6096" layer="1"/>
-<smd name="2" x="0.4064" y="0.4572" dx="0.4064" dy="0.6096" layer="1"/>
-<smd name="3" x="-1.7272" y="0" dx="0.0508" dy="0.0508" layer="1"/>
-<smd name="4" x="0.4064" y="-0.4572" dx="0.4064" dy="0.6096" layer="1"/>
-<smd name="5" x="1.1176" y="-0.4572" dx="0.4064" dy="0.6096" layer="1"/>
-<pad name="6" x="-0.9652" y="0" drill="0.254"/>
-<wire x1="-0.1524" y1="-0.0762" x2="-0.1524" y2="0" width="0.4064" layer="1"/>
-<wire x1="-0.1524" y1="0" x2="-0.2032" y2="0.254" width="0.4064" layer="1"/>
-<wire x1="-0.2032" y1="0.254" x2="-0.3048" y2="0.4826" width="0.4064" layer="1"/>
-<wire x1="-0.3048" y1="0.4826" x2="-0.4826" y2="0.635" width="0.4064" layer="1"/>
-<wire x1="-0.4826" y1="0.635" x2="-0.7112" y2="0.762" width="0.4064" layer="1"/>
-<wire x1="-0.7112" y1="0.762" x2="-0.9652" y2="0.7874" width="0.4064" layer="1"/>
-<wire x1="-0.9652" y1="0.7874" x2="-1.1938" y2="0.762" width="0.4064" layer="1"/>
-<wire x1="-1.1938" y1="0.762" x2="-1.4224" y2="0.635" width="0.4064" layer="1"/>
-<wire x1="-1.4224" y1="0.635" x2="-1.6002" y2="0.4826" width="0.4064" layer="1"/>
-<wire x1="-1.6002" y1="0.4826" x2="-1.7018" y2="0.254" width="0.4064" layer="1"/>
-<wire x1="-1.7018" y1="0.254" x2="-1.7526" y2="0" width="0.4064" layer="1"/>
-<wire x1="-1.7526" y1="0" x2="-1.7526" y2="-0.0762" width="0.4064" layer="1"/>
-<wire x1="-1.7526" y1="-0.0762" x2="-1.7018" y2="-0.0762" width="0.4064" layer="1"/>
-<wire x1="-1.7018" y1="-0.0762" x2="-1.7018" y2="0" width="0.4064" layer="1"/>
-<wire x1="-1.7018" y1="0" x2="-1.6764" y2="0.2286" width="0.4064" layer="1"/>
-<wire x1="-1.6764" y1="0.2286" x2="-1.5494" y2="0.4318" width="0.4064" layer="1"/>
-<wire x1="-1.5494" y1="0.4318" x2="-1.397" y2="0.6096" width="0.4064" layer="1"/>
-<wire x1="-1.397" y1="0.6096" x2="-1.1938" y2="0.7112" width="0.4064" layer="1"/>
-<wire x1="-1.1938" y1="0.7112" x2="-0.9652" y2="0.762" width="0.4064" layer="1"/>
-<wire x1="-0.9652" y1="0.762" x2="-0.7112" y2="0.7112" width="0.4064" layer="1"/>
-<wire x1="-0.7112" y1="0.7112" x2="-0.508" y2="0.6096" width="0.4064" layer="1"/>
-<wire x1="-0.508" y1="0.6096" x2="-0.3556" y2="0.4318" width="0.4064" layer="1"/>
-<wire x1="-0.3556" y1="0.4318" x2="-0.2286" y2="0.2286" width="0.4064" layer="1"/>
-<wire x1="-0.2286" y1="0.2286" x2="-0.2032" y2="0" width="0.4064" layer="1"/>
-<wire x1="-0.2032" y1="0" x2="-0.2032" y2="-0.0762" width="0.4064" layer="1"/>
-<wire x1="-0.1524" y1="0.0762" x2="-0.1524" y2="0" width="0.4064" layer="1"/>
-<wire x1="-0.1524" y1="0" x2="-0.2032" y2="-0.254" width="0.4064" layer="1"/>
-<wire x1="-0.2032" y1="-0.254" x2="-0.3048" y2="-0.4826" width="0.4064" layer="1"/>
-<wire x1="-0.3048" y1="-0.4826" x2="-0.4826" y2="-0.635" width="0.4064" layer="1"/>
-<wire x1="-0.4826" y1="-0.635" x2="-0.7112" y2="-0.762" width="0.4064" layer="1"/>
-<wire x1="-0.7112" y1="-0.762" x2="-0.9652" y2="-0.7874" width="0.4064" layer="1"/>
-<wire x1="-0.9652" y1="-0.7874" x2="-1.1938" y2="-0.762" width="0.4064" layer="1"/>
-<wire x1="-1.1938" y1="-0.762" x2="-1.4224" y2="-0.635" width="0.4064" layer="1"/>
-<wire x1="-1.4224" y1="-0.635" x2="-1.6002" y2="-0.4826" width="0.4064" layer="1"/>
-<wire x1="-1.6002" y1="-0.4826" x2="-1.7018" y2="-0.254" width="0.4064" layer="1"/>
-<wire x1="-1.7018" y1="-0.254" x2="-1.7526" y2="0" width="0.4064" layer="1"/>
-<wire x1="-1.7526" y1="0" x2="-1.7526" y2="0.0762" width="0.4064" layer="1"/>
-<wire x1="-1.7526" y1="0.0762" x2="-1.7018" y2="0.0762" width="0.4064" layer="1"/>
-<wire x1="-1.7018" y1="0.0762" x2="-1.7018" y2="0" width="0.4064" layer="1"/>
-<wire x1="-1.7018" y1="0" x2="-1.6764" y2="-0.2286" width="0.4064" layer="1"/>
-<wire x1="-1.6764" y1="-0.2286" x2="-1.5494" y2="-0.4318" width="0.4064" layer="1"/>
-<wire x1="-1.5494" y1="-0.4318" x2="-1.397" y2="-0.6096" width="0.4064" layer="1"/>
-<wire x1="-1.397" y1="-0.6096" x2="-1.1938" y2="-0.7112" width="0.4064" layer="1"/>
-<wire x1="-1.1938" y1="-0.7112" x2="-0.9652" y2="-0.762" width="0.4064" layer="1"/>
-<wire x1="-0.9652" y1="-0.762" x2="-0.7112" y2="-0.7112" width="0.4064" layer="1"/>
-<wire x1="-0.7112" y1="-0.7112" x2="-0.508" y2="-0.6096" width="0.4064" layer="1"/>
-<wire x1="-0.508" y1="-0.6096" x2="-0.3556" y2="-0.4318" width="0.4064" layer="1"/>
-<wire x1="-0.3556" y1="-0.4318" x2="-0.2286" y2="-0.2286" width="0.4064" layer="1"/>
-<wire x1="-0.2286" y1="-0.2286" x2="-0.2032" y2="0" width="0.4064" layer="1"/>
-<wire x1="-0.2032" y1="0" x2="-0.2032" y2="0.0762" width="0.4064" layer="1"/>
-<wire x1="2.286" y1="-1.8034" x2="-2.286" y2="-1.8034" width="0.1524" layer="39"/>
-<wire x1="-2.286" y1="-1.8034" x2="-2.286" y2="1.8034" width="0.1524" layer="39"/>
-<wire x1="-2.286" y1="1.8034" x2="2.286" y2="1.8034" width="0.1524" layer="39"/>
-<wire x1="2.286" y1="1.8034" x2="2.286" y2="-1.8034" width="0.1524" layer="39"/>
-<wire x1="-2.032" y1="-0.2794" x2="-2.032" y2="-1.5494" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="-1.5494" x2="2.032" y2="-1.5494" width="0.1524" layer="21"/>
-<wire x1="2.032" y1="-1.5494" x2="2.032" y2="1.5494" width="0.1524" layer="21"/>
-<wire x1="2.032" y1="1.5494" x2="-2.032" y2="1.5494" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="1.5494" x2="-2.032" y2="0.2794" width="0.1524" layer="21"/>
-<wire x1="-2.032" y1="-1.5494" x2="2.032" y2="-1.5494" width="0.1524" layer="51"/>
-<wire x1="2.032" y1="-1.5494" x2="2.032" y2="1.5494" width="0.1524" layer="51"/>
-<wire x1="2.032" y1="1.5494" x2="-2.032" y2="1.5494" width="0.1524" layer="51"/>
-<wire x1="-2.032" y1="1.5494" x2="-2.032" y2="-1.5494" width="0.1524" layer="51"/>
-<text x="-4.5212" y="1.8796" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-5.8674" y="-3.9116" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="ADMP621ACEZ-RL7">
-<pin name="VDD" x="-17.78" y="2.54" length="middle" direction="pwr"/>
-<pin name="CLK" x="-17.78" y="-2.54" length="middle" direction="in"/>
-<pin name="L/R_SELECT" x="-17.78" y="-5.08" length="middle" direction="pas"/>
-<pin name="GND_2" x="-17.78" y="-7.62" length="middle" direction="pas"/>
-<pin name="GND" x="-17.78" y="-10.16" length="middle" direction="pas"/>
-<pin name="DATA" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
-<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-15.24" width="0.4064" layer="94"/>
-<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.4064" layer="94"/>
-<wire x1="12.7" y1="-15.24" x2="12.7" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.4064" layer="94"/>
-<text x="-4.8768" y="8.763" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-6.2484" y="-18.1102" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ADMP621ACEZ-RL7" prefix="U">
-<description>IC, MICROPHONE, 2 CH , LGA_CAV-5</description>
-<gates>
-<gate name="A" symbol="ADMP621ACEZ-RL7" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ADI_ADMP521A">
-<connects>
-<connect gate="A" pin="CLK" pad="1"/>
-<connect gate="A" pin="DATA" pad="5"/>
-<connect gate="A" pin="GND" pad="6"/>
-<connect gate="A" pin="GND_2" pad="3"/>
-<connect gate="A" pin="L/R_SELECT" pad="2"/>
-<connect gate="A" pin="VDD" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MPN" value="ADMP621ACEZ-RL7" constant="no"/>
-<attribute name="OC_FARNELL" value="2361525 " constant="no"/>
-<attribute name="OC_NEWARK" value="08X1061" constant="no"/>
-<attribute name="PACKAGE" value="5LGA" constant="no"/>
-<attribute name="SUPPLIER" value="ANALOG DEVICES" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="pinhead">
 <description>&lt;b&gt;Simple Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -10118,6 +9996,84 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 </deviceset>
 </devicesets>
 </library>
+<library name="InvenSense-INMP621ACEZ-R7-rect">
+<packages>
+<package name="ADMP621ACEZ-RL7-RECT">
+<smd name="1" x="1.025" y="0.45" dx="0.4" dy="0.6" layer="1"/>
+<smd name="2" x="0.325" y="0.45" dx="0.4" dy="0.6" layer="1"/>
+<smd name="3" x="-1.7272" y="0" dx="0.0508" dy="0.0508" layer="1"/>
+<smd name="4" x="0.325" y="-0.45" dx="0.4" dy="0.6" layer="1"/>
+<smd name="5" x="1.025" y="-0.45" dx="0.4" dy="0.6" layer="1"/>
+<pad name="6" x="-0.9652" y="0" drill="0.7" diameter="1.7"/>
+<wire x1="2.286" y1="-1.8034" x2="-2.286" y2="-1.8034" width="0.1524" layer="39"/>
+<wire x1="-2.286" y1="-1.8034" x2="-2.286" y2="1.8034" width="0.1524" layer="39"/>
+<wire x1="-2.286" y1="1.8034" x2="2.286" y2="1.8034" width="0.1524" layer="39"/>
+<wire x1="2.286" y1="1.8034" x2="2.286" y2="-1.8034" width="0.1524" layer="39"/>
+<wire x1="-2.032" y1="-0.2794" x2="-2.032" y2="-1.5494" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.5494" x2="2.032" y2="-1.5494" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.5494" x2="2.032" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.5494" x2="-2.032" y2="1.5494" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.5494" x2="-2.032" y2="0.2794" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.5494" x2="2.032" y2="-1.5494" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="-1.5494" x2="2.032" y2="1.5494" width="0.1524" layer="51"/>
+<wire x1="2.032" y1="1.5494" x2="-2.032" y2="1.5494" width="0.1524" layer="51"/>
+<wire x1="-2.032" y1="1.5494" x2="-2.032" y2="-1.5494" width="0.1524" layer="51"/>
+<text x="-4.5212" y="1.8796" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-5.8674" y="-3.9116" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<smd name="GND6" x="-1.725" y="0" dx="0.35" dy="2.8" layer="1"/>
+<smd name="GND" x="1.725" y="0" dx="0.35" dy="2.8" layer="1"/>
+<smd name="GND2" x="1.575" y="1.225" dx="0.35" dy="0.65" layer="1" rot="R90"/>
+<smd name="GND3" x="1.575" y="-1.225" dx="0.35" dy="0.65" layer="1" rot="R90"/>
+<smd name="GND5" x="-0.8875" y="1.225" dx="0.35" dy="2.025" layer="1" rot="R90"/>
+<smd name="GND4" x="-0.8875" y="-1.225" dx="0.35" dy="2.025" layer="1" rot="R90"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ADMP621ACEZ-RL7-RECT">
+<pin name="VDD" x="-17.78" y="2.54" length="middle" direction="pwr"/>
+<pin name="CLK" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="L/R_SELECT" x="-17.78" y="-5.08" length="middle" direction="pas"/>
+<pin name="GND_2" x="-17.78" y="-7.62" length="middle" direction="pas"/>
+<pin name="GND" x="-17.78" y="-10.16" length="middle" direction="pas"/>
+<pin name="DATA" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-15.24" x2="12.7" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="12.7" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.4064" layer="94"/>
+<text x="-4.8768" y="8.763" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-6.2484" y="-18.1102" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ADMP621ACEZ-RL7-RECT" prefix="U">
+<description>IC, MICROPHONE, 2 CH , LGA_CAV-5</description>
+<gates>
+<gate name="A" symbol="ADMP621ACEZ-RL7-RECT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ADMP621ACEZ-RL7-RECT">
+<connects>
+<connect gate="A" pin="CLK" pad="1"/>
+<connect gate="A" pin="DATA" pad="5"/>
+<connect gate="A" pin="GND" pad="6"/>
+<connect gate="A" pin="GND_2" pad="3"/>
+<connect gate="A" pin="L/R_SELECT" pad="2"/>
+<connect gate="A" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MPN" value="ADMP621ACEZ-RL7" constant="no"/>
+<attribute name="OC_FARNELL" value="2361525 " constant="no"/>
+<attribute name="OC_NEWARK" value="08X1061" constant="no"/>
+<attribute name="PACKAGE" value="5LGA" constant="no"/>
+<attribute name="SUPPLIER" value="ANALOG DEVICES" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -10134,8 +10090,8 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="C2" library="rcl" deviceset="C-US" device="C0805" value="100pf"/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="supply2" deviceset="GND" device=""/>
-<part name="AMBIENT" library="InvenSense-INMP621ACEZ-R7" deviceset="ADMP621ACEZ-RL7" device=""/>
-<part name="VOICE" library="InvenSense-INMP621ACEZ-R7" deviceset="ADMP621ACEZ-RL7" device=""/>
+<part name="AMBIENT" library="InvenSense-INMP621ACEZ-R7-rect" deviceset="ADMP621ACEZ-RL7-RECT" device=""/>
+<part name="VOICE" library="InvenSense-INMP621ACEZ-R7-rect" deviceset="ADMP621ACEZ-RL7-RECT" device=""/>
 <part name="TESTPINS" library="pinhead" deviceset="PINHD-1X7" device=""/>
 <part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>

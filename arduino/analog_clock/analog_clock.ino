@@ -8,10 +8,10 @@ void setup() {
 
   // prepare the clk pin
   pinMode(clk, OUTPUT);
-  analogWriteResolution(8);
+  analogWriteResolution(1);
   analogWriteFrequency(clk, 3000000);
+  analogWrite(clk, 1); // set duty cycle to 50%
 }
 
 void loop() {
-  analogWrite(clk, 128); // set duty cycle to 50%
 }

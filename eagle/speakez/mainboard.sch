@@ -4332,7 +4332,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <smd name="3" x="-1.7272" y="0" dx="0.0508" dy="0.0508" layer="1"/>
 <smd name="4" x="0.325" y="-0.45" dx="0.4" dy="0.6" layer="1"/>
 <smd name="5" x="1.025" y="-0.45" dx="0.4" dy="0.6" layer="1"/>
-<pad name="6" x="-0.9652" y="0" drill="0.7" diameter="1.7"/>
+<pad name="GND@7" x="-0.9652" y="0" drill="0.7" diameter="1.7"/>
 <wire x1="2.286" y1="-1.8034" x2="-2.286" y2="-1.8034" width="0.1524" layer="39"/>
 <wire x1="-2.286" y1="-1.8034" x2="-2.286" y2="1.8034" width="0.1524" layer="39"/>
 <wire x1="-2.286" y1="1.8034" x2="2.286" y2="1.8034" width="0.1524" layer="39"/>
@@ -4348,12 +4348,12 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <wire x1="-2.032" y1="1.5494" x2="-2.032" y2="-1.5494" width="0.1524" layer="51"/>
 <text x="-4.5212" y="1.8796" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.8674" y="-3.9116" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
-<smd name="GND6" x="-1.725" y="0" dx="0.35" dy="2.8" layer="1"/>
-<smd name="GND" x="1.725" y="0" dx="0.35" dy="2.8" layer="1"/>
-<smd name="GND2" x="1.575" y="1.225" dx="0.35" dy="0.65" layer="1" rot="R90"/>
-<smd name="GND3" x="1.575" y="-1.225" dx="0.35" dy="0.65" layer="1" rot="R90"/>
-<smd name="GND5" x="-0.8875" y="1.225" dx="0.35" dy="2.025" layer="1" rot="R90"/>
-<smd name="GND4" x="-0.8875" y="-1.225" dx="0.35" dy="2.025" layer="1" rot="R90"/>
+<smd name="GND@6" x="-1.725" y="0" dx="0.35" dy="2.1" layer="1"/>
+<smd name="GND@1" x="1.725" y="0" dx="0.35" dy="2.1" layer="1"/>
+<smd name="GND@2" x="1.575" y="1.225" dx="0.35" dy="0.65" layer="1" rot="R90"/>
+<smd name="GND@3" x="1.575" y="-1.225" dx="0.35" dy="0.65" layer="1" rot="R90"/>
+<smd name="GND@5" x="-0.8875" y="1.225" dx="0.35" dy="2.025" layer="1" rot="R90"/>
+<smd name="GND@4" x="-0.8875" y="-1.225" dx="0.35" dy="2.025" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -4383,7 +4383,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <connects>
 <connect gate="A" pin="CLK" pad="1"/>
 <connect gate="A" pin="DATA" pad="5"/>
-<connect gate="A" pin="GND" pad="6"/>
+<connect gate="A" pin="GND" pad="GND@7"/>
 <connect gate="A" pin="GND_2" pad="3"/>
 <connect gate="A" pin="L/R_SELECT" pad="2"/>
 <connect gate="A" pin="VDD" pad="4"/>
@@ -4463,6 +4463,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100k"/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
+<part name="SUPPLY11" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4549,6 +4550,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <instance part="R6" gate="G$1" x="193.04" y="7.62" rot="R270"/>
 <instance part="P+1" gate="1" x="114.3" y="111.76"/>
 <instance part="P+2" gate="1" x="243.84" y="-43.18"/>
+<instance part="SUPPLY11" gate="GND" x="-86.36" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -4739,6 +4741,24 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <junction x="248.92" y="-15.24"/>
 <wire x1="236.22" y1="27.94" x2="236.22" y2="20.32" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="AMBIENT" gate="A" pin="GND"/>
+<pinref part="AMBIENT" gate="A" pin="L/R_SELECT"/>
+<pinref part="AMBIENT" gate="A" pin="GND_2"/>
+<wire x1="-86.36" y1="40.64" x2="-86.36" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="38.1" x2="-86.36" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-86.36" y="38.1"/>
+<wire x1="-86.36" y1="35.56" x2="-86.36" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-86.36" y="35.56"/>
+<pinref part="FROMBOARD" gate="A" pin="3"/>
+<wire x1="-86.36" y1="25.4" x2="-66.04" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="25.4" x2="-66.04" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-86.36" y1="35.56" x2="-93.98" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="-93.98" y1="35.56" x2="-93.98" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="SUPPLY11" gate="GND" pin="GND"/>
+<junction x="-86.36" y="25.4"/>
+</segment>
 </net>
 <net name="DATA" class="0">
 <segment>
@@ -4779,24 +4799,6 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <wire x1="96.52" y1="38.1" x2="96.52" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="TESTPINS" gate="A" pin="1"/>
 <wire x1="-20.32" y1="50.8" x2="-12.7" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="AMBIENT" gate="A" pin="GND"/>
-<pinref part="AMBIENT" gate="A" pin="L/R_SELECT"/>
-<pinref part="AMBIENT" gate="A" pin="GND_2"/>
-<wire x1="-86.36" y1="40.64" x2="-86.36" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="38.1" x2="-86.36" y2="35.56" width="0.1524" layer="91"/>
-<junction x="-86.36" y="38.1"/>
-<wire x1="-86.36" y1="35.56" x2="-86.36" y2="25.4" width="0.1524" layer="91"/>
-<junction x="-86.36" y="35.56"/>
-<pinref part="FROMBOARD" gate="A" pin="3"/>
-<wire x1="-86.36" y1="25.4" x2="-66.04" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="-66.04" y1="25.4" x2="-66.04" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-86.36" y1="35.56" x2="-93.98" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="-93.98" y1="35.56" x2="-93.98" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">

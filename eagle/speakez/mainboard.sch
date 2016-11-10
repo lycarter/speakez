@@ -4518,7 +4518,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <instance part="SUPPLY4" gate="GND" x="33.02" y="88.9" rot="R180"/>
 <instance part="U$1" gate="G$1" x="144.78" y="15.24"/>
 <instance part="U1" gate="G$1" x="129.54" y="101.6"/>
-<instance part="C5" gate="G$1" x="121.92" y="86.36"/>
+<instance part="C5" gate="G$1" x="121.92" y="88.9"/>
 <instance part="C6" gate="G$1" x="139.7" y="86.36"/>
 <instance part="C7" gate="G$1" x="116.84" y="86.36"/>
 <instance part="C8" gate="G$1" x="149.86" y="86.36"/>
@@ -4657,7 +4657,8 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <wire x1="111.76" y1="106.68" x2="111.76" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="83.82" x2="116.84" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
-<wire x1="116.84" y1="83.82" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="83.82" x2="129.54" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="83.82" x2="129.54" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="83.82" x2="134.62" y2="83.82" width="0.1524" layer="91"/>
@@ -4689,6 +4690,9 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <junction x="203.2" y="55.88"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <junction x="134.62" y="83.82"/>
+<wire x1="121.92" y1="83.82" x2="121.92" y2="86.36" width="0.1524" layer="91"/>
+<junction x="121.92" y="83.82"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="BK2125HM601-T1" gate="G$1" pin="2"/>
@@ -4862,7 +4866,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <pinref part="U1" gate="G$1" pin="IN"/>
 <pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="121.92" y1="101.6" x2="121.92" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="101.6" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
 <junction x="121.92" y="101.6"/>
 <wire x1="121.92" y1="101.6" x2="116.84" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>

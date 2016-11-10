@@ -5,7 +5,7 @@ const int data = 16;
 IntervalTimer readTimer;
 
 void setup() {
-  // sanity check
+  // sanity check with led
   pinMode(led, OUTPUT);
   digitalWrite(led, HIGH);
 
@@ -16,24 +16,28 @@ void setup() {
   analogWrite(clk, 1); // set duty cycle to 50%, (half of 2^resolution)
 
   // prepare data pin
-  pinMode(data, INPUT);
+  pinMode(data, INPUT_PULLUP);
   Serial.begin(115200);
-  readTimer.begin(readMic, 1);  // this is a dumb arbitrary limit and i hate it. 1mhz max.
+  attachInterrupt(digitalPinToInterrupt(data), readMic, RISING);
 }
 
 volatile unsigned long count = 0;
+volatile unsigned long total = 0;
 
-void readMic(void) {
+void readMic() {
   count += digitalRead(data);
+  total += 1;
 }
 
 void loop() {
   unsigned long countCopy;
+  unsigned long totalCopy;
 
   noInterrupts();
   countCopy = count;
+  totalCopy = total;
   interrupts();
   
-  Serial.println(countCopy);
+  Serial.printf("%lu, %lu", countCopy, totalCopy);
   delayMicroseconds(43);
 }

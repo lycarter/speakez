@@ -1,6 +1,8 @@
-int clk = 3;
-int led = 13;
-int data = 16;
+const int clk = 3;
+const int led = 13;
+const int data = 16;
+
+IntervalTimer readTimer;
 
 void setup() {
   // sanity check
@@ -10,16 +12,28 @@ void setup() {
   // prepare the clk pin
   pinMode(clk, OUTPUT);
   analogWriteResolution(1);
-  analogWriteFrequency(clk, 3000000);
+  analogWriteFrequency(clk, 3000000);  // 3mhz
   analogWrite(clk, 1); // set duty cycle to 50%, (half of 2^resolution)
 
   // prepare data pin
   pinMode(data, INPUT);
-  Serial.begin(9600);
+  Serial.begin(115200);
+  readTimer.begin(readMic, 1);  // this is a dumb arbitrary limit and i hate it. 1mhz max.
+}
+
+volatile unsigned long count = 0;
+
+void readMic(void) {
+  count += digitalRead(data);
 }
 
 void loop() {
-  int dataValue = digitalRead(data);
-  Serial.println(dataValue);
-  delayMicroseconds(1);
+  unsigned long countCopy;
+
+  noInterrupts();
+  countCopy = count;
+  interrupts();
+  
+  Serial.println(countCopy);
+  delayMicroseconds(43);
 }

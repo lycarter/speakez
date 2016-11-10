@@ -10215,7 +10215,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <instance part="C15" gate="G$1" x="177.8" y="30.48"/>
 <instance part="C16" gate="G$1" x="190.5" y="33.02"/>
 <instance part="C17" gate="G$1" x="236.22" y="43.18"/>
-<instance part="BK2125HM601-T1" gate="G$1" x="243.84" y="27.94" rot="R90"/>
+<instance part="BK2125HM601-T1" gate="G$1" x="228.6" y="27.94" rot="R90"/>
 <instance part="SUPPLY9" gate="GND" x="251.46" y="25.4"/>
 <instance part="JLINK" gate="A" x="238.76" y="-22.86"/>
 <instance part="R6" gate="G$1" x="193.04" y="7.62" rot="R270"/>
@@ -10363,6 +10363,47 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <segment>
 <pinref part="BK2125HM601-T1" gate="G$1" pin="2"/>
 <pinref part="SUPPLY9" gate="GND" pin="GND"/>
+<wire x1="236.22" y1="27.94" x2="251.46" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="40.64" x2="236.22" y2="27.94" width="0.1524" layer="91"/>
+<junction x="236.22" y="27.94"/>
+<wire x1="236.22" y1="20.32" x2="248.92" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="JLINK" gate="A" pin="4"/>
+<wire x1="243.84" y1="-15.24" x2="248.92" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="-15.24" x2="248.92" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="JLINK" gate="A" pin="6"/>
+<wire x1="248.92" y1="-17.78" x2="243.84" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="-17.78" x2="248.92" y2="-20.32" width="0.1524" layer="91"/>
+<junction x="248.92" y="-17.78"/>
+<pinref part="JLINK" gate="A" pin="8"/>
+<wire x1="248.92" y1="-20.32" x2="243.84" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="-20.32" x2="248.92" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="248.92" y="-20.32"/>
+<pinref part="JLINK" gate="A" pin="10"/>
+<wire x1="248.92" y1="-22.86" x2="243.84" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="-22.86" x2="248.92" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="248.92" y="-22.86"/>
+<pinref part="JLINK" gate="A" pin="12"/>
+<wire x1="248.92" y1="-25.4" x2="243.84" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="-25.4" x2="248.92" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="248.92" y="-25.4"/>
+<pinref part="JLINK" gate="A" pin="14"/>
+<wire x1="248.92" y1="-27.94" x2="243.84" y2="-27.94" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="-27.94" x2="248.92" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="248.92" y="-27.94"/>
+<pinref part="JLINK" gate="A" pin="16"/>
+<wire x1="248.92" y1="-30.48" x2="243.84" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="-30.48" x2="248.92" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="248.92" y="-30.48"/>
+<pinref part="JLINK" gate="A" pin="18"/>
+<wire x1="248.92" y1="-33.02" x2="243.84" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="-33.02" x2="248.92" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="248.92" y="-33.02"/>
+<pinref part="JLINK" gate="A" pin="20"/>
+<wire x1="248.92" y1="-35.56" x2="243.84" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="248.92" y1="20.32" x2="248.92" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="248.92" y="-15.24"/>
+<wire x1="236.22" y1="27.94" x2="236.22" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -10503,7 +10544,7 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <wire x1="121.92" y1="-22.86" x2="121.92" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="DECOUPLED" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VBAT"/>
 <pinref part="U1" gate="G$1" pin="OUT"/>
@@ -10575,11 +10616,15 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <junction x="218.44" y="12.7"/>
 <pinref part="JLINK" gate="A" pin="1"/>
 <wire x1="218.44" y1="-12.7" x2="236.22" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="182.88" y1="10.16" x2="187.96" y2="12.7" width="0.1524" layer="91"/>
-<junction x="187.96" y="12.7"/>
 <pinref part="R6" gate="G$1" pin="1"/>
 <junction x="193.04" y="12.7"/>
+<pinref part="U$1" gate="G$1" pin="VOUT3V3"/>
+<wire x1="175.26" y1="66.04" x2="175.26" y2="63.5" width="0.1524" layer="91"/>
+<junction x="175.26" y="63.5"/>
+<wire x1="187.96" y1="12.7" x2="182.88" y2="12.7" width="0.1524" layer="91"/>
+<junction x="187.96" y="12.7"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="182.88" y1="12.7" x2="182.88" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -10644,68 +10689,6 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <pinref part="TESTPINS" gate="A" pin="7"/>
 <wire x1="-12.7" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="-15.24" y1="35.56" x2="-15.24" y2="-30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="VREF-L"/>
-<pinref part="U$1" gate="G$1" pin="VSSA"/>
-<wire x1="175.26" y1="30.48" x2="175.26" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="C15" gate="G$1" pin="2"/>
-<wire x1="175.26" y1="27.94" x2="177.8" y2="27.94" width="0.1524" layer="91"/>
-<junction x="175.26" y="27.94"/>
-<pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="27.94" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="27.94" x2="200.66" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="27.94" x2="236.22" y2="27.94" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="27.94" x2="236.22" y2="40.64" width="0.1524" layer="91"/>
-<junction x="177.8" y="27.94"/>
-<pinref part="C16" gate="G$1" pin="2"/>
-<wire x1="190.5" y1="30.48" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
-<junction x="190.5" y="27.94"/>
-<pinref part="BK2125HM601-T1" gate="G$1" pin="1"/>
-<junction x="236.22" y="27.94"/>
-<wire x1="200.66" y1="27.94" x2="200.66" y2="2.54" width="0.1524" layer="91"/>
-<junction x="200.66" y="27.94"/>
-<pinref part="TEST2" gate="A" pin="5"/>
-<wire x1="200.66" y1="2.54" x2="228.6" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="27.94" x2="236.22" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="236.22" y1="20.32" x2="248.92" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="JLINK" gate="A" pin="4"/>
-<wire x1="243.84" y1="-15.24" x2="248.92" y2="-15.24" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="-15.24" x2="248.92" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="JLINK" gate="A" pin="6"/>
-<wire x1="248.92" y1="-17.78" x2="243.84" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="-17.78" x2="248.92" y2="-20.32" width="0.1524" layer="91"/>
-<junction x="248.92" y="-17.78"/>
-<pinref part="JLINK" gate="A" pin="8"/>
-<wire x1="248.92" y1="-20.32" x2="243.84" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="-20.32" x2="248.92" y2="-22.86" width="0.1524" layer="91"/>
-<junction x="248.92" y="-20.32"/>
-<pinref part="JLINK" gate="A" pin="10"/>
-<wire x1="248.92" y1="-22.86" x2="243.84" y2="-22.86" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="-22.86" x2="248.92" y2="-25.4" width="0.1524" layer="91"/>
-<junction x="248.92" y="-22.86"/>
-<pinref part="JLINK" gate="A" pin="12"/>
-<wire x1="248.92" y1="-25.4" x2="243.84" y2="-25.4" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="-25.4" x2="248.92" y2="-27.94" width="0.1524" layer="91"/>
-<junction x="248.92" y="-25.4"/>
-<pinref part="JLINK" gate="A" pin="14"/>
-<wire x1="248.92" y1="-27.94" x2="243.84" y2="-27.94" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="-27.94" x2="248.92" y2="-30.48" width="0.1524" layer="91"/>
-<junction x="248.92" y="-27.94"/>
-<pinref part="JLINK" gate="A" pin="16"/>
-<wire x1="248.92" y1="-30.48" x2="243.84" y2="-30.48" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="-30.48" x2="248.92" y2="-33.02" width="0.1524" layer="91"/>
-<junction x="248.92" y="-30.48"/>
-<pinref part="JLINK" gate="A" pin="18"/>
-<wire x1="248.92" y1="-33.02" x2="243.84" y2="-33.02" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="-33.02" x2="248.92" y2="-35.56" width="0.1524" layer="91"/>
-<junction x="248.92" y="-33.02"/>
-<pinref part="JLINK" gate="A" pin="20"/>
-<wire x1="248.92" y1="-35.56" x2="243.84" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="248.92" y1="20.32" x2="248.92" y2="-15.24" width="0.1524" layer="91"/>
-<junction x="248.92" y="-15.24"/>
 </segment>
 </net>
 <net name="N$30" class="0">
@@ -10825,6 +10808,28 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <wire x1="210.82" y1="-5.08" x2="210.82" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="JLINK" gate="A" pin="5"/>
 <wire x1="210.82" y1="-17.78" x2="236.22" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="TEST2" gate="A" pin="5"/>
+<pinref part="C15" gate="G$1" pin="2"/>
+<pinref part="U$1" gate="G$1" pin="VSSA"/>
+<pinref part="U$1" gate="G$1" pin="VREF-L"/>
+<wire x1="175.26" y1="30.48" x2="175.26" y2="27.94" width="0.1524" layer="91"/>
+<junction x="175.26" y="27.94"/>
+<wire x1="175.26" y1="27.94" x2="177.8" y2="27.94" width="0.1524" layer="91"/>
+<junction x="177.8" y="27.94"/>
+<wire x1="177.8" y1="27.94" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="190.5" y1="30.48" x2="190.5" y2="27.94" width="0.1524" layer="91"/>
+<junction x="190.5" y="27.94"/>
+<wire x1="190.5" y1="27.94" x2="200.66" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="27.94" x2="200.66" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="2.54" x2="228.6" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="BK2125HM601-T1" gate="G$1" pin="1"/>
+<wire x1="220.98" y1="27.94" x2="200.66" y2="27.94" width="0.1524" layer="91"/>
+<junction x="200.66" y="27.94"/>
 </segment>
 </net>
 </nets>

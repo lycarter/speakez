@@ -4417,8 +4417,8 @@ INDUCTOR POWER 3.3UH 4.0A SMD&lt;br&gt;
 <wire x1="2.032" y1="-1.5494" x2="2.032" y2="1.5494" width="0.1524" layer="51"/>
 <wire x1="2.032" y1="1.5494" x2="-2.032" y2="1.5494" width="0.1524" layer="51"/>
 <wire x1="-2.032" y1="1.5494" x2="-2.032" y2="-1.5494" width="0.1524" layer="51"/>
-<text x="-4.5212" y="1.8796" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-5.8674" y="-3.9116" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
+<text x="-1.9812" y="1.8796" size="0.4064" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-2.0574" y="-2.6416" size="0.4064" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 <smd name="GND@6" x="-1.725" y="0" dx="0.35" dy="2.1" layer="1"/>
 <smd name="GND@1" x="1.725" y="0" dx="0.35" dy="2.1" layer="1"/>
 <smd name="GND@2" x="1.575" y="1.225" dx="0.35" dy="0.65" layer="1" rot="R90"/>

@@ -4841,20 +4841,20 @@ Spark Fun Electronics SKU : COM-00107</description>
 </net>
 <net name="N$18" class="0">
 <segment>
-<wire x1="27.94" y1="50.8" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="TP10" gate="G$1" pin="1"/>
+<wire x1="27.94" y1="53.34" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="101.6" x2="7.62" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="D6/PWM"/>
-<wire x1="27.94" y1="50.8" x2="116.84" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D5/PWM"/>
+<wire x1="116.84" y1="53.34" x2="27.94" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<wire x1="30.48" y1="15.24" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="12.7" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="TP11" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="93.98" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="D20/A6/PWM"/>
-<wire x1="30.48" y1="15.24" x2="116.84" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D21/A7/PWM"/>
+<wire x1="116.84" y1="12.7" x2="30.48" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

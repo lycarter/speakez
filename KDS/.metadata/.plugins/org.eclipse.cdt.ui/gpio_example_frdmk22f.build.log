@@ -1,0 +1,6 @@
+01:42:20 **** Incremental Build of configuration debug for project gpio_example_frdmk22f ****
+make -k all 
+make: Nothing to be done for 'all'.
+
+01:42:20 Build Finished (took 233ms)
+

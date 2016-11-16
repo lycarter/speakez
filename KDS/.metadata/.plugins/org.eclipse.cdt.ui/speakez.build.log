@@ -1,0 +1,25 @@
+18:44:18 **** Build of configuration Debug for project speakez ****
+make all 
+Building file: ../Sources/main.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Sources/main.d" -MT"Sources/main.o" -c -o "Sources/main.o" "../Sources/main.c"
+Finished building: ../Sources/main.c
+ 
+Building file: ../Project_Settings/Startup_Code/startup_MK20D7.S
+Invoking: Cross ARM GNU Assembler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -x assembler-with-cpp -MMD -MP -MF"Project_Settings/Startup_Code/startup_MK20D7.d" -MT"Project_Settings/Startup_Code/startup_MK20D7.o" -c -o "Project_Settings/Startup_Code/startup_MK20D7.o" "../Project_Settings/Startup_Code/startup_MK20D7.S"
+Finished building: ../Project_Settings/Startup_Code/startup_MK20D7.S
+ 
+Building file: ../Project_Settings/Startup_Code/system_MK20D7.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"Project_Settings/Startup_Code/system_MK20D7.d" -MT"Project_Settings/Startup_Code/system_MK20D7.o" -c -o "Project_Settings/Startup_Code/system_MK20D7.o" "../Project_Settings/Startup_Code/system_MK20D7.c"
+Finished building: ../Project_Settings/Startup_Code/system_MK20D7.c
+ 
+Building target: speakez.elf
+Invoking: Cross ARM C++ Linker
+arm-none-eabi-g++ -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -T "MK20DX64xxx7_flash.ld" -Xlinker --gc-sections -L"C:/Users/lycarter/Documents/MIT/speakez/KDS/speakez/Project_Settings/Linker_Files" -Wl,-Map,"speakez.map" -specs=nano.specs -specs=nosys.specs -o "speakez.elf"  ./Sources/main.o  ./Project_Settings/Startup_Code/startup_MK20D7.o ./Project_Settings/Startup_Code/system_MK20D7.o   
+Finished building target: speakez.elf
+ 
+
+18:44:19 Build Finished (took 1s.31ms)
+

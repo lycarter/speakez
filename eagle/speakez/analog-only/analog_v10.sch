@@ -1632,7 +1632,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </class>
 </classes>
 <parts>
-<part name="U1" library="InvenSense-INMP621ACEZ-R7" deviceset="ADMP621ACEZ-RL7" device=""/>
+<part name="U1" library="InvenSense-INMP621ACEZ-R7" deviceset="ADMP621ACEZ-RL7" device="" value=""/>
 <part name="SUPPLY1" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="C1" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1 uF"/>

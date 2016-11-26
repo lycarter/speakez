@@ -31,6 +31,7 @@
 #include "Cpu.h"
 #include "Events.h"
 #include "PTC.h"
+#include "ADC0.h"
 /* Including shared modules, which are used for whole project */
 #include "PE_Types.h"
 #include "PE_Error.h"
@@ -59,9 +60,10 @@ int main(void)
 ////	  i++;
 //	  GPIOC_PTOR = 0x40;
 //  }
+
   for(;;) {
 	  i++;
-	  if(i%500000==1) {
+	  if(i%2000000==1) {
 		  GPIOC_PTOR = 0x04;
 	  }
   }

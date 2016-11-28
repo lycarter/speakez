@@ -8,7 +8,7 @@
 **     Repository  : Kinetis
 **     Datasheet   : K20P144M72SF1RM Rev. 0, Nov 2011
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-11-25, 23:57, # CodeGen: 28
+**     Date/Time   : 2016-11-28, 00:01, # CodeGen: 20
 **     Abstract    :
 **
 **     Settings    :
@@ -23,17 +23,7 @@
 **              Fast internal reference clock [MHz]        : 4
 **              Initialize fast trim value                 : no
 **            RTC oscillator                               : Disabled
-**            System oscillator 0                          : Enabled
-**              Clock source                               : External crystal
-**                Clock input pin                          : 
-**                  Pin name                               : EXTAL0/PTA18/FTM0_FLT2/FTM_CLKIN0
-**                  Pin signal                             : 
-**                Clock output pin                         : 
-**                  Pin name                               : XTAL0/PTA19/FTM1_FLT0/FTM_CLKIN1/LPTMR0_ALT1
-**                  Pin signal                             : 
-**                Clock frequency [MHz]                    : 3
-**                Capacitor load                           : 0pF
-**                Oscillator operating mode                : Low power
+**            System oscillator 0                          : Disabled
 **            Clock source settings                        : 1
 **              Clock source setting 0                     : 
 **                Internal reference clock                 : 
@@ -45,7 +35,7 @@
 **                External reference clock                 : 
 **                  OSC0ERCLK clock                        : Enabled
 **                  OSC0ERCLK in stop                      : Disabled
-**                  OSC0ERCLK clock [MHz]                  : 3
+**                  OSC0ERCLK clock [MHz]                  : 0
 **                  ERCLK32K clock source                  : Auto select
 **                  ERCLK32K. clock [kHz]                  : 0.001
 **                MCG settings                             : 
@@ -53,7 +43,7 @@
 **                  MCG output clock                       : FLL clock
 **                  MCG output [MHz]                       : 83.88608
 **                  MCG external ref. clock source         : System oscillator 0
-**                  MCG external ref. clock [MHz]          : 3
+**                  MCG external ref. clock [MHz]          : 0
 **                  Clock monitor                          : Disabled
 **                  FLL settings                           : 
 **                    FLL module                           : Enabled
@@ -245,14 +235,14 @@
 **            Clock configuration 0                        : 
 **              __IRC_32kHz                                : 0.032768
 **              __IRC_4MHz                                 : 4
-**              __SYSTEM_OSC                               : 3
+**              __SYSTEM_OSC                               : 8
 **              __RTC_OSC                                  : 0
 **              Very low power mode                        : Disabled
 **              Clock source setting                       : configuration 0
 **                MCG mode                                 : FEI
 **                MCG output [MHz]                         : 83.88608
 **                MCGIRCLK clock [MHz]                     : 4
-**                OSCERCLK clock [MHz]                     : 3
+**                OSCERCLK clock [MHz]                     : 0
 **                ERCLK32K. clock [kHz]                    : 0.001
 **                MCGFFCLK [kHz]                           : 32.768
 **              System clocks                              : 
@@ -313,7 +303,8 @@
 
 /* {Default RTOS Adapter} No RTOS includes */
 #include "PTC.h"
-#include "ADC0.h"
+#include "AD1.h"
+#include "AdcLdd1.h"
 #include "PE_Types.h"
 #include "PE_Error.h"
 #include "PE_Const.h"
@@ -400,8 +391,10 @@ void __init_hardware(void)
   SIM_CLKDIV1 = SIM_CLKDIV1_OUTDIV1(0x00) |
                 SIM_CLKDIV1_OUTDIV2(0x01) |
                 SIM_CLKDIV1_OUTDIV4(0x03); /* Set the system prescalers to safe value */
-  /* SIM_SCGC5: PORTC=1,PORTA=1 */
-  SIM_SCGC5 |= (SIM_SCGC5_PORTC_MASK | SIM_SCGC5_PORTA_MASK); /* Enable clock gate for ports to enable pin routing */
+  /* SIM_SCGC5: PORTC=1,PORTB=1,PORTA=1 */
+  SIM_SCGC5 |= SIM_SCGC5_PORTC_MASK |
+               SIM_SCGC5_PORTB_MASK |
+               SIM_SCGC5_PORTA_MASK;   /* Enable clock gate for ports to enable pin routing */
   if ((PMC_REGSC & PMC_REGSC_ACKISO_MASK) != 0x0U) {
     /* PMC_REGSC: ACKISO=1 */
     PMC_REGSC |= PMC_REGSC_ACKISO_MASK; /* Release IO pads after wakeup from VLLS mode. */
@@ -414,10 +407,6 @@ void __init_hardware(void)
   SIM_SOPT2 &= (uint32_t)~(uint32_t)(SIM_SOPT2_PLLFLLSEL_MASK); /* Select FLL as a clock source for various peripherals */
   /* SIM_SOPT1: OSC32KSEL=3 */
   SIM_SOPT1 |= SIM_SOPT1_OSC32KSEL(0x03); /* LPO 1kHz oscillator drives 32 kHz clock for various peripherals */
-  /* PORTA_PCR18: ISF=0,MUX=0 */
-  PORTA_PCR18 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
-  /* PORTA_PCR19: ISF=0,MUX=0 */
-  PORTA_PCR19 &= (uint32_t)~(uint32_t)((PORT_PCR_ISF_MASK | PORT_PCR_MUX(0x07)));
   /* MCG_SC: FCRDIV=0 */
   MCG_SC &= (uint8_t)~(uint8_t)(MCG_SC_FCRDIV(0x07));
   /* Switch to FEI Mode */
@@ -426,8 +415,8 @@ void __init_hardware(void)
            MCG_C1_FRDIV(0x00) |
            MCG_C1_IREFS_MASK |
            MCG_C1_IRCLKEN_MASK;
-  /* MCG_C2: LOCRE0=0,??=0,RANGE0=1,HGO0=0,EREFS0=1,LP=0,IRCS=1 */
-  MCG_C2 = (MCG_C2_RANGE0(0x01) | MCG_C2_EREFS0_MASK | MCG_C2_IRCS_MASK);
+  /* MCG_C2: LOCRE0=0,??=0,RANGE0=0,HGO0=0,EREFS0=0,LP=0,IRCS=1 */
+  MCG_C2 = (MCG_C2_RANGE0(0x00) | MCG_C2_IRCS_MASK);
   /* MCG_C4: DMX32=0,DRST_DRS=3 */
   MCG_C4 = (uint8_t)((MCG_C4 & (uint8_t)~(uint8_t)(
             MCG_C4_DMX32_MASK
@@ -531,8 +520,6 @@ void PE_low_level_init(void)
   /* Common initialization of the CPU registers */
   /* NVICIP89: PRI89=0 */
   NVICIP89 = NVIC_IP_PRI89(0x00);
-  /* NVICIP57: PRI57=0 */
-  NVICIP57 = NVIC_IP_PRI57(0x00);
   /* NVICIP20: PRI20=0 */
   NVICIP20 = NVIC_IP_PRI20(0x00);
   /* PORTC_PCR2: ISF=0,MUX=1,DSE=1 */
@@ -559,10 +546,8 @@ void PE_low_level_init(void)
   PTC_Init();
 
 
-  /* ### Init_ADC "ADC0" init code ... */
-  ADC0_Init();
-
-
+  /* ### ADC "AD1" init code ... */
+  AD1_Init();
   /* Enable interrupts of the given priority level */
   Cpu_SetBASEPRI(0U);
 }

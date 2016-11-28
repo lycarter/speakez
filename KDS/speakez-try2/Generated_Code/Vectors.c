@@ -6,7 +6,7 @@
 **     Version     : Component 01.001, Driver 01.04, CPU db: 3.00.000
 **     Repository  : Kinetis
 **     Compiler    : GNU C Compiler
-**     Date/Time   : 2016-11-25, 23:57, # CodeGen: 28
+**     Date/Time   : 2016-11-28, 00:01, # CodeGen: 20
 **     Abstract    :
 **
 **     Settings    :
@@ -56,7 +56,8 @@
 
   #include "Cpu.h"
   #include "PTC.h"
-  #include "ADC0.h"
+  #include "AD1.h"
+  #include "AdcLdd1.h"
   #include "Events.h"
 
 

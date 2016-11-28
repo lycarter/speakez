@@ -50,8 +50,12 @@
   </PATHS>
   <FILES>
     <GeneratedCs>
+      <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\AD1.c</PathName>
+      <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\ADC0.c</PathName>
+      <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\AdcLdd1.c</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\Cpu.c</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\PE_LDD.c</PathName>
+      <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\PTB.c</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\PTC.c</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\Vectors.c</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Project_Settings\Startup_Code\startup.c</PathName>
@@ -59,12 +63,16 @@
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Sources\main.c</PathName>
     </GeneratedCs>
     <GeneratedHs>
+      <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\AD1.h</PathName>
+      <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\ADC0.h</PathName>
+      <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\AdcLdd1.h</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\Cpu.h</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\IO_Map.h</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\PE_Const.h</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\PE_Error.h</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\PE_LDD.h</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\PE_Types.h</PathName>
+      <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\PTB.h</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Generated_Code\PTC.h</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Sources\Events.h</PathName>
       <PathName>C:\Users\lycarter\Documents\MIT\speakez\KDS\speakez-try2\Static_Code\IO_Map\MK20D7.h</PathName>

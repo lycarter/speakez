@@ -1,0 +1,6 @@
+00:05:42 **** Incremental Build of configuration release for project ksdk_platform_lib_K20D10 ****
+make -k all 
+make: Nothing to be done for 'all'.
+
+00:05:43 Build Finished (took 679ms)
+

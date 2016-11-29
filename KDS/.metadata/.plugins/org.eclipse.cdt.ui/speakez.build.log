@@ -1,0 +1,16 @@
+01:41:43 **** Build of configuration Debug for project speakez ****
+make all 
+Building file: C:/Freescale/KSDK_1.3.0/examples/frdmk22f/board.c
+Invoking: Cross ARM C Compiler
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections  -g3 -I"../Sources" -I"../Includes" -std=c99 -MMD -MP -MF"board/board.d" -MT"board/board.o" -c -o "board/board.o" "C:/Freescale/KSDK_1.3.0/examples/frdmk22f/board.c"
+In file included from C:/Freescale/KSDK_1.3.0/examples/frdmk22f/board.h:36:0,
+                 from C:/Freescale/KSDK_1.3.0/examples/frdmk22f/board.c:31:
+C:/Freescale/KSDK_1.3.0/examples/frdmk22f/gpio_pins.h:54:29: fatal error: fsl_gpio_driver.h: No such file or directory
+ #include "fsl_gpio_driver.h"
+                             ^
+compilation terminated.
+board/subdir.mk:27: recipe for target 'board/board.o' failed
+make: *** [board/board.o] Error 1
+
+01:41:43 Build Finished (took 231ms)
+

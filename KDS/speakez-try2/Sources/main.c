@@ -62,12 +62,16 @@ int main(void)
 ////	  i++;
 //	  GPIOC_PTOR = 0x40;
 //  }
+  uint16_t value = 0;
+//  int i = 0;
+  for (;;) {
+//	  i++;
+//	  if (i % 1000000 == 1) {
+	  (void) AD1_Measure(TRUE);
+	  (void) AD1_GetValue16(&value);
+//	  }
 
-  uint16_t value[10] = { 0 };
-  (void)AD1_Measure(TRUE);
-  (void)AD1_GetValue16(value);
-
-
+  }
 
   /* For example: for(;;) { } */
 

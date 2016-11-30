@@ -45,6 +45,7 @@ eagle.epf
 # KDS files
 KDS/.metadata/
 *Documentation/
+*Generated_code/
 
 # Miscellaneous files
 *.swo

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2796,7 +2796,6 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <part name="U1" library="LP38691" deviceset="V_REG_78XX" device="7812" value="+12v"/>
 <part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
-<part name="HP" library="35mm_audio" deviceset="SJ-43514-SMT" device=""/>
 <part name="RADIO" library="35mm_audio" deviceset="SJ-43514-SMT" device=""/>
 <part name="VD2" library="diode" deviceset="DIODE-SCHOTTKY-" device="SOD123" value="40V AF DIODE"/>
 <part name="U2" library="MAX5486" deviceset="MAX5486" device=""/>
@@ -2838,7 +2837,6 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <sheets>
 <sheet>
 <plain>
-<text x="50.8" y="15.24" size="1.778" layer="97">TRRS TO HEADPHONES</text>
 <text x="83.82" y="15.24" size="1.778" layer="97">TRRS TO RADIO</text>
 <text x="10.16" y="12.7" size="1.778" layer="97">BYPASS RESISTORS</text>
 <text x="-93.98" y="17.78" size="1.778" layer="97">AUDIO AMP TO HEADPHONES</text>
@@ -2885,7 +2883,6 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <instance part="U1" gate="G$1" x="63.5" y="119.38"/>
 <instance part="C9" gate="G$1" x="71.12" y="114.3"/>
 <instance part="P+5" gate="VCC" x="78.74" y="119.38" rot="R270"/>
-<instance part="HP" gate="G$1" x="53.34" y="0"/>
 <instance part="RADIO" gate="G$1" x="86.36" y="0"/>
 <instance part="VD2" gate="G$1" x="50.8" y="119.38"/>
 <instance part="U2" gate="G$1" x="-71.12" y="66.04"/>
@@ -3306,7 +3303,6 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <label x="25.4" y="-22.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="HP" gate="G$1" pin="RING1"/>
 <wire x1="63.5" y1="-5.08" x2="63.5" y2="-20.32" width="0.1524" layer="91"/>
 <label x="63.5" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -3325,7 +3321,6 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <label x="12.7" y="-22.86" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="HP" gate="G$1" pin="TIP"/>
 <wire x1="58.42" y1="-5.08" x2="58.42" y2="-20.32" width="0.1524" layer="91"/>
 <label x="58.42" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -3387,7 +3382,6 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="HP" gate="G$1" pin="SLEEVE"/>
 <wire x1="53.34" y1="-5.08" x2="53.34" y2="-20.32" width="0.1524" layer="91"/>
 <label x="53.34" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -3448,7 +3442,6 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <label x="63.5" y="106.68" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="HP" gate="G$1" pin="RING2"/>
 <wire x1="68.58" y1="-5.08" x2="68.58" y2="-20.32" width="0.1524" layer="91"/>
 <label x="68.58" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>

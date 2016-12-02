@@ -2798,7 +2798,7 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
 <part name="HP" library="35mm_audio" deviceset="SJ-43514-SMT" device=""/>
 <part name="RADIO" library="35mm_audio" deviceset="SJ-43514-SMT" device=""/>
-<part name="VD2" library="diode" deviceset="DIODE-SCHOTTKY-" device="SOD123"/>
+<part name="VD2" library="diode" deviceset="DIODE-SCHOTTKY-" device="SOD123" value="40V AF DIODE"/>
 <part name="U2" library="MAX5486" deviceset="MAX5486" device=""/>
 <part name="SUPPLY10" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="supply2" deviceset="GND" device=""/>
@@ -2947,12 +2947,14 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <wire x1="116.84" y1="111.76" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="ST"/>
 <wire x1="116.84" y1="99.06" x2="116.84" y2="104.14" width="0.1524" layer="91"/>
+<junction x="116.84" y="104.14"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VDD"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <wire x1="17.78" y1="99.06" x2="10.16" y2="99.06" width="0.1524" layer="91"/>
+<junction x="17.78" y="99.06"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="OUT"/>
@@ -2966,12 +2968,14 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <pinref part="C6" gate="G$1" pin="1"/>
 <wire x1="-101.6" y1="99.06" x2="-91.44" y2="99.06" width="0.1524" layer="91"/>
 <label x="-101.6" y="99.06" size="1.778" layer="95"/>
+<junction x="-91.44" y="99.06"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="VDD"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="-50.8" y1="43.18" x2="-35.56" y2="43.18" width="0.1524" layer="91"/>
 <label x="-40.64" y="43.18" size="1.778" layer="95"/>
+<junction x="-50.8" y="43.18"/>
 </segment>
 <segment>
 <pinref part="U2" gate="G$1" pin="SHDN"/>
@@ -2999,6 +3003,9 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="R14" gate="G$1" pin="2"/>
 <pinref part="R15" gate="G$1" pin="2"/>
+<junction x="-38.1" y="73.66"/>
+<junction x="-38.1" y="78.74"/>
+<junction x="-38.1" y="83.82"/>
 </segment>
 <segment>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
@@ -3033,6 +3040,7 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <wire x1="17.78" y1="104.14" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="104.14" x2="0" y2="104.14" width="0.1524" layer="91"/>
 <label x="0" y="104.14" size="1.778" layer="95"/>
+<junction x="15.24" y="104.14"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -3121,6 +3129,7 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <junction x="48.26" y="66.04"/>
 <junction x="48.26" y="63.5"/>
 <wire x1="35.56" y1="81.28" x2="35.56" y2="66.04" width="0.1524" layer="91"/>
+<junction x="35.56" y="66.04"/>
 </segment>
 </net>
 <net name="RIGHT" class="0">
@@ -3436,6 +3445,7 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <pinref part="C9" gate="G$1" pin="2"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="71.12" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<label x="63.5" y="106.68" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
 <pinref part="HP" gate="G$1" pin="RING2"/>
@@ -3486,6 +3496,11 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-50.8,43.18,U2,VDD,VCC,,,"/>
+<approved hash="104,1,-50.8,53.34,U2,WL,HEADPH_L,,,"/>
+<approved hash="104,1,-50.8,48.26,U2,VSS,GND,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>

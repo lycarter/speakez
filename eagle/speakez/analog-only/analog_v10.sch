@@ -3501,7 +3501,6 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <segment>
 <pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="-33.02" x2="35.56" y2="-38.1" width="0.1524" layer="91"/>
-<label x="35.56" y="-48.26" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="HP_L_AMPD" class="0">

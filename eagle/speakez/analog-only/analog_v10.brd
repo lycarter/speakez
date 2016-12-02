@@ -150,7 +150,7 @@ SpeakEZ
 #OJ</text>
 <hole x="10.16" y="31.75" drill="1.27"/>
 <hole x="10.16" y="28.448" drill="1.27"/>
-<rectangle x1="10.984" y1="-8.16" x2="20.984" y2="-0.26" layer="1"/>
+<rectangle x1="9.714" y1="-7.525" x2="19.714" y2="0.375" layer="1"/>
 </plain>
 <libraries>
 <library name="SparkFun-Passives">
@@ -752,10 +752,10 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="5"/>
 <wire x1="23.876" y1="17.918" x2="22.726" y2="19.068" width="0.1524" layer="1"/>
 <wire x1="22.726" y1="19.068" x2="22.311" y2="19.068" width="0.1524" layer="1"/>
-<wire x1="22.311" y1="19.068" x2="23.876" y2="20.633" width="0.1524" layer="1"/>
-<wire x1="23.876" y1="20.633" x2="23.876" y2="23.368" width="0.1524" layer="1"/>
-<wire x1="23.876" y1="23.368" x2="22.606" y2="24.638" width="0.1524" layer="1"/>
-<wire x1="22.606" y1="24.638" x2="22.236" y2="24.638" width="0.1524" layer="1"/>
+<wire x1="22.236" y1="24.638" x2="22.987" y2="24.638" width="0.1524" layer="1"/>
+<wire x1="22.987" y1="24.638" x2="23.495" y2="24.13" width="0.1524" layer="1"/>
+<wire x1="23.495" y1="24.13" x2="23.495" y2="20.252" width="0.1524" layer="1"/>
+<wire x1="23.495" y1="20.252" x2="22.311" y2="19.068" width="0.1524" layer="1"/>
 </signal>
 <signal name="AUDIO_AMPD">
 <contactref element="C5" pad="2"/>

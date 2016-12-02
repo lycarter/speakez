@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
@@ -2796,7 +2796,7 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <part name="U1" library="LP38691" deviceset="V_REG_78XX" device="7812" value="+12v"/>
 <part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0805" value="0.1 uF"/>
 <part name="P+5" library="supply1" deviceset="VCC" device=""/>
-<part name="HEADPHONE" library="35mm_audio" deviceset="SJ-43514-SMT" device=""/>
+<part name="HP" library="35mm_audio" deviceset="SJ-43514-SMT" device=""/>
 <part name="RADIO" library="35mm_audio" deviceset="SJ-43514-SMT" device=""/>
 <part name="VD2" library="diode" deviceset="DIODE-SCHOTTKY-" device="SOD123"/>
 <part name="U2" library="MAX5486" deviceset="MAX5486" device=""/>
@@ -2848,6 +2848,15 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <sheets>
 <sheet>
 <plain>
+<text x="22.86" y="27.94" size="1.778" layer="91">RADIO</text>
+<text x="81.28" y="27.94" size="1.778" layer="91">MIC OUTPUT</text>
+<text x="20.32" y="-12.7" size="1.778" layer="91">BYPASS RESISTORS</text>
+<text x="-93.98" y="17.78" size="1.778" layer="91">AUDIO AMP TO HEADPHONES</text>
+<text x="-58.42" y="114.3" size="1.778" layer="91">VOLUME CONTROL</text>
+<text x="55.88" y="76.2" size="1.778" layer="91">MIC FILTER + AMP</text>
+<text x="93.98" y="111.76" size="1.778" layer="91">OSCILLATOR</text>
+<text x="20.32" y="127" size="1.778" layer="91">MICROPHONE</text>
+<text x="53.34" y="127" size="1.778" layer="91">VOLTAGE REGULATOR</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="48.26" y="58.42"/>
@@ -2885,7 +2894,7 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <instance part="U1" gate="G$1" x="63.5" y="119.38"/>
 <instance part="C9" gate="G$1" x="71.12" y="114.3"/>
 <instance part="P+5" gate="VCC" x="78.74" y="119.38" rot="R270"/>
-<instance part="HEADPHONE" gate="G$1" x="25.4" y="12.7"/>
+<instance part="HP" gate="G$1" x="25.4" y="12.7"/>
 <instance part="RADIO" gate="G$1" x="83.82" y="12.7"/>
 <instance part="VD2" gate="G$1" x="53.34" y="119.38"/>
 <instance part="U2" gate="G$1" x="-48.26" y="66.04"/>
@@ -2989,12 +2998,12 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <wire x1="71.12" y1="111.76" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="HEADPHONE" gate="G$1" pin="SLEEVE"/>
+<pinref part="HP" gate="G$1" pin="SLEEVE"/>
 <wire x1="25.4" y1="7.62" x2="25.4" y2="-5.08" width="0.1524" layer="91"/>
 <label x="25.4" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="HEADPHONE" gate="G$1" pin="RING2"/>
+<pinref part="HP" gate="G$1" pin="RING2"/>
 <wire x1="40.64" y1="7.62" x2="40.64" y2="-5.08" width="0.1524" layer="91"/>
 <label x="40.64" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -3301,7 +3310,7 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 </net>
 <net name="RIGHT" class="0">
 <segment>
-<pinref part="HEADPHONE" gate="G$1" pin="RING1"/>
+<pinref part="HP" gate="G$1" pin="RING1"/>
 <wire x1="35.56" y1="7.62" x2="35.56" y2="-5.08" width="0.1524" layer="91"/>
 <label x="35.56" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -3316,13 +3325,14 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <label x="-81.28" y="63.5" size="1.778" layer="95"/>
 </segment>
 <segment>
-<wire x1="35.56" y1="-25.4" x2="35.56" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="-22.86" x2="35.56" y2="-17.78" width="0.1524" layer="91"/>
 <label x="35.56" y="-20.32" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="LEFT" class="0">
 <segment>
-<pinref part="HEADPHONE" gate="G$1" pin="TIP"/>
+<pinref part="HP" gate="G$1" pin="TIP"/>
 <wire x1="30.48" y1="7.62" x2="30.48" y2="-5.08" width="0.1524" layer="91"/>
 <label x="30.48" y="-5.08" size="1.778" layer="95" rot="R90"/>
 </segment>
@@ -3501,6 +3511,7 @@ Please send any comments to: &lt;a href="mailto:messi@users.sourceforge.net"&gt;
 <segment>
 <pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="-33.02" x2="35.56" y2="-38.1" width="0.1524" layer="91"/>
+<label x="35.56" y="-48.26" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="HP_L_AMPD" class="0">
